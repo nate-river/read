@@ -1,0 +1,994 @@
+@charset "UTF-8";
+a {
+    display: block;
+}
+
+.header {
+    width: 100%;
+    height: 1.1rem;
+    background: #29a6dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.header .zi {
+    font-size: 0.4rem;
+    color: white;
+    text-align: center;
+}
+
+.header .xian {
+    width: 0.5rem;
+    height: 0.02rem;
+    background: white;
+    position: absolute;
+    top: 0.55rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header .xian li {
+    width: 0.05rem;
+    height: 0.05rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.header .xian li:nth-child(1) {
+    float: left;
+    margin-top: -0.01rem;
+}
+
+.header .xian li:nth-child(2) {
+    float: right;
+    margin-top: -0.01rem;
+}
+
+.header #sjMY {
+    color: white;
+    font-size: 0.08rem;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+
+.header .sjimg {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.2rem;
+    background: url(/book/home2/images/myinfo/d1.png);
+    background-size: 100% 100%;
+}
+
+.header .xhtui {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.2rem;
+    background: url(/book/home2/images/myinfo/d5.jpg);
+    background-size: 100% 100%;
+}
+
+.header .woimg {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.2rem;
+    background: url(/book/home2/images/myinfo/d2.png);
+    background-size: 100% 100%;
+}
+
+.header .sousoicon {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.2rem;
+    background: url(/book/home2/images/myinfo/d4.jpg);
+    background-size: 100% 100%;
+}
+
+.header .fanhui {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.2rem;
+    right: auto;
+    background: url(/book/home2/images/myinfo/b16.png) left center;
+    background-size: 100%;
+}
+
+.header .sousoicon {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.2rem;
+    background: url(/book/home2/images/myinfo/b16.png);
+    background-size: 100%;
+}
+
+.sjbotton {
+    width: 7.5rem;
+    height: 1.1rem;
+    border: 0.01rem solid #ccc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.sjbotton li {
+    float: left;
+    width: 33.3%;
+    height: 100%;
+}
+
+.sjbotton .img {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.sjbotton li:nth-child(1) {
+    background: #111723;
+    border-right: 0.02rem solid #CCCCCC;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.01rem;
+    color: #383C45;
+    line-height: 1.7rem;
+}
+
+.sjbotton li:nth-child(1) .img {
+    margin-top: 0.2rem;
+    background: url(/book/home2/images/myinfo/c2.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+}
+
+.sjbotton li:nth-child(2) {
+    background: #151C2B;
+    border-right: 0.02rem solid #CCCCCC;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.1rem;
+    color: #383C45;
+    line-height: 1.7rem;
+}
+
+.sjbotton li:nth-child(2) .img {
+    margin-top: 0.15rem;
+
+    background: url(/book/home2/images/myinfo/b14.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sjbotton li:nth-child(3) {
+    background: #151C2B;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.1rem;
+    color: white;
+    line-height: 1.7rem;
+}
+
+.sjbotton li:nth-child(3) .img {
+    margin-top: 0.15rem;
+
+    background: url(/book/home2/images/myinfo/d3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#cjx-setting {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.2rem;
+}
+
+.cjx-gerenzhongxin {
+    height: 100vh;
+    padding-top: 1.4rem;
+    box-sizing: border-box;
+}
+
+.cjx-touxiang {
+    display:block;
+    margin: 0 auto;
+    border: 0.2rem solid #ededed;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    box-sizing: border-box;
+    /*margin-top: 1.4rem;*/
+    margin-bottom: 1rem;
+    background: url(/book/home2/images/myinfo/4-my_10_03.jpg) center;
+    background-size: 120% 120%;
+}
+.cjx-touxiang img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+#cjx-username {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.32rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-qianming {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.22rem;
+    font-family: "微软雅黑";
+    margin-top: 0.2rem;
+    color: #666;
+}
+
+.cjx-setting{
+    padding-top:2rem;
+}
+
+#cjx-xinxi {
+    /*margin-top: 2rem;*/
+}
+
+#cjx-Myinfo {
+    margin-top: 2rem;
+}
+
+.cjx-xinxi {
+    width: 7rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    border: 0.001rem solid #ccc;
+
+    box-shadow: 0rem 0rem 0.3rem 0rem #CCCCCC;
+}
+
+.cjx-xinxi .cjx-banben {
+    height: 1.2rem;
+    border-bottom: 0.01rem dashed #000;
+    position: relative;
+    background: #fff;
+}
+
+.cjx-xinxi .cjx-banben .cjx-huojian {
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.5rem;
+    border-radius: 50%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-tuobiao1 {
+    background: url(/book/home2/images/myinfo/4-my_07.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-tuobiao2 {
+    background: url(/book/home2/images/myinfo/4-my_10.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-tuobiao3 {
+    background: url(/book/home2/images/myinfo/4_03.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-tuobiao4 {
+    background: url(/book/home2/images/myinfo/4-my_12.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-icon1 {
+    background: url(/book/home2/images/myinfo/4-my_07.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-icon2 {
+    background: url(/book/home2/images/myinfo/4-my_10.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-icon3 {
+    background: url(/book/home2/images/myinfo/4_03.jpg) center;
+    background-size: 120% 120%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-icon4 {
+    background: url(/book/home2/images/myinfo/4-my_12.jpg) center;
+    background-size: 120% 120%;
+}
+
+
+
+.cjx-xinxi .cjx-banben .cjx-shuoming {
+    position: absolute;
+    left: 0.8rem;
+    top: 0.35rem;
+    font-size: 0.25rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-xinxi .cjx-banben .cjx-english {
+    position: absolute;
+    left: 0.8rem;
+    top: 0.65rem;
+    font-size: 0.16rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-xinxi .cjx-banben .cjx-ver {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.4rem;
+    font-size: 0.28rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-xinxi .cjx-banben .cjx-jiantou {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.4rem;
+    font-size: 0.28rem;
+    font-family: "微软雅黑";
+    color: #6ec3e7;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-top: 0.1rem;
+    background: url("/book/home2/images/my/jt.png") center center no-repeat;
+}
+
+.cjx-xinxi .cjx-banben .cjx-icon5 {
+    width: 0.8rem;
+    height: 0.35rem;
+    background: url(/book/home2/images/myinfo/button0.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.cjx-xinxi .cjx-banben .cjx-icon5.active{
+    background: url(/book/home2/images/myinfo/button1.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.cjx-xinxi .cjx-banben:nth-of-type(4) {
+    border-bottom: none;
+}
+
+.cjx-exit {
+    text-align: center;
+    line-height: 0.68rem;
+    width: 5.6rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background: #29DCBC;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+
+.cjx-tanchu {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 4.8rem;
+    height: 5.6rem;
+    background: #29dcbc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 1000rem rgba(0, 0, 0, 0.8);
+}
+.cjx-tanchu1{
+    height:4rem;
+}
+.cjx-tanchu .cjx-rentu {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(/book/home2/images/myinfo/d3.png) center;
+    background-size: 110% 110%;
+}
+
+.cjx-tanchu .cjx-ren {
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    color: #FFFFFF;
+    font-size: 0.22rem;
+}
+
+.cjx-tanchu .cjx-reneng {
+    position: absolute;
+    top: 0.55rem;
+    left: 1rem;
+    color: #FFFFFF;
+    font-size: 0.16rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting {
+    position: absolute;
+    top: 1rem;
+    width: 4.8rem;
+    height: 4.6rem;
+    background: #FFFFFF;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 0.2rem;
+}
+
+.cjx-tanchu1 .cjx-tixingsetting{
+    height:4rem;
+    line-height:4rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting p:nth-of-type(1) {
+    text-align: center;
+    font-size: 0.3rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting p:nth-of-type(2) {
+    text-align: center;
+    font-size: 0.16rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting p:nth-of-type(3) {
+    text-align: center;
+    font-size: 0.22rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting .cjx-guanbi {
+    position: relative;
+    border-bottom: 0.01rem dashed #666666;
+    height: 0.85rem;
+}
+.cjx-tanchu .cjx-tixingsetting .cjx-guanbi.active{
+    background:#29DCBC;
+}
+
+.cjx-tanchu .cjx-tixingsetting .cjx-guanbi .cjx-yueduti {
+    position: absolute;
+    top: 0.1rem;
+    font-size: 0.22rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting .cjx-guanbi .cjx-kaoyou {
+    left: 0.5rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting .cjx-guanbi .cjx-yuedueng {
+    position: absolute;
+    top: 0.42rem;
+    font-size: 0.16rem;
+}
+
+.cjx-tanchu .cjx-tixingsetting .cjx-guanbi .cjx-guanbiquan {
+    position: absolute;
+    top: 0.25rem;
+    right: 0;
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.cjx-tanchu .cjx-quxiao {
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0.4rem;
+    width: 1.95rem;
+    height: 0.78rem;
+    padding: 0.2rem;
+    border: 0.02rem solid #29DCBC;
+    font-size: 0.28rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.cjx-tanchu .cjx-queding {
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.4rem;
+    width: 1.95rem;
+    height: 0.78rem;
+    padding: 0.2rem;
+    background: #29DCBC;
+    font-size: 0.28rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+}
+
+.cjx-pianhao {
+    /*margin-top: 1rem;*/
+    width: 7.25rem;
+    height: 7.68rem;
+}
+
+.cjx-pianhao .cjx-pianhaoliebiao {
+    width: auto;
+    height: auto;
+    padding-top: 0.6rem;
+
+}
+
+.cjx-pianhao .cjx-pianhaoliebiao .cjx-pianhaoxiangqing {
+    text-align: center;
+    height: 1rem;
+}
+
+.cjx-pianhao .cjx-pianhaoliebiao .cjx-pianhaoxiangqing span {
+    margin-left: 0.2rem;
+    border: 0.02rem solid #3a3a3a;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+/*
+.cjx-pianhao .cjx-pianhaoliebiao .cjx-pianhaoxiangqing span:hover {
+    background: #6EC3E7;
+    color: #FFFFFF;
+}
+*/
+.cjx-pianhao .cjx-pianhaoliebiao .cjx-pianhaoxiangqing span.addactive {
+    background: #6EC3E7;
+    color: #FFFFFF;
+}
+
+.cjx-pianhao .cjx-start {
+    text-align: center;
+    line-height: 0.68rem;
+    width: 5.6rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #29DCBC;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+
+.cjx-tanchu2 {
+    transform: scale(0, 0);
+    transition: all 0.2s linear;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 4.8rem;
+    height: 5.6rem;
+    background: #29dcbc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 1000rem rgba(0, 0, 0, 0.8);
+}
+
+.cjx-tanchu2 .cjx-rentu {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.55rem;
+    width: 0.36rem;
+    height: 0.36rem;
+}
+
+.cjx-tanchu2 .cjx-ren {
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    color: #FFFFFF;
+    font-size: 0.22rem;
+}
+
+.cjx-tanchu2 .cjx-reneng {
+    position: absolute;
+    top: 0.55rem;
+    left: 1rem;
+    color: #FFFFFF;
+    font-size: 0.16rem;
+}
+
+.cjx-tanchu2 .cjx-tixingsetting {
+    position: absolute;
+    top: 1rem;
+    width: 4.8rem;
+    height: 4.6rem;
+    background: #FFFFFF;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 0.2rem;
+}
+
+.cjx-tanchu2 .cjx-tixingsetting .cjx-guanbi {
+    position: relative;
+    border-bottom: 0.01rem dashed #666666;
+    height: 0.85rem;
+}
+.cjx-tanchu2 .cjx-tixingsetting .cjx-guanbi.active{
+    background:#29dcbc;
+}
+
+.cjx-tanchu2 .cjx-tixingsetting .cjx-guanbi .cjx-yueduti {
+    position: absolute;
+    top: 0.1rem;
+    font-size: 0.22rem;
+}
+
+.cjx-tanchu2 .cjx-tixingsetting .cjx-guanbi .cjx-yuedueng {
+    position: absolute;
+    top: 0.42rem;
+    font-size: 0.16rem;
+}
+
+.cjx-tanchu2 .cjx-tixingsetting .cjx-guanbi .cjx-guanbiquan {
+    position: absolute;
+    top: 0.25rem;
+    right: 0;
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.cjx-tanchu2 .cjx-quxiao {
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0.4rem;
+    width: 1.95rem;
+    height: 0.78rem;
+    padding: 0.2rem;
+    border: 0.02rem solid #29DCBC;
+    font-size: 0.28rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.cjx-tanchu2 .cjx-queding {
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.4rem;
+    width: 1.95rem;
+    height: 0.78rem;
+    padding: 0.2rem;
+    background: #29DCBC;
+    font-size: 0.28rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+}
+
+.cjx-tuijian .cjx-xinxi {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 0.001rem solid #ccc;
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.8rem 0.1rem #CCCCCC;
+}
+
+.cjx-tuijian .cjx-xinxi .cjx-banben {
+    height: 1.2rem;
+    border-bottom: 0.01rem dashed #000;
+    position: relative;
+    background: #fff;
+}
+
+.cjx-tuijian .cjx-xinxi .cjx-banben .cjx-huojian {
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.5rem;
+    background: #fdcd3a;
+}
+
+.cjx-tuijian .cjx-xinxi .cjx-banben .cjx-shuoming {
+    position: absolute;
+    left: 0.8rem;
+    top: 0.35rem;
+    font-size: 0.25rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-tuijian .cjx-xinxi .cjx-banben .cjx-english {
+    position: absolute;
+    left: 0.8rem;
+    top: 0.65rem;
+    font-size: 0.16rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-tuijian .cjx-xinxi .cjx-banben .cjx-ver {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.4rem;
+    font-size: 0.28rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-tuijian .cjx-xinxi .cjx-banben .cjx-jiantou {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.4rem;
+    font-size: 0.28rem;
+    font-family: "微软雅黑";
+    color: #6ec3e7;
+}
+
+.cjx-huluobo .cjx-xinxi {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border: 0.001rem solid #ccc;
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.8rem 0.1rem #CCCCCC;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben {
+    height: 1.5rem;
+    border-bottom: 0.01rem dashed #000;
+    position: relative;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben .cjx-huojian {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 0.1rem;
+    top: 0.4rem;
+    border-radius: 50%;
+    background: url(/book/home2/images/myinfo/4-wode_03.jpg) center;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben .cjx-shuoming {
+    position: absolute;
+    left: 1rem;
+    top: 0.2rem;
+    font-size: 0.4rem;
+    font-family: "微软雅黑";
+    color: #666;
+    font-weight: 500;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben .cjx-english {
+    position: absolute;
+    left: 1rem;
+    top: 0.65rem;
+    font-size: 0.16rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben .cjx-ao {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 0.08rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben .cjx-ver {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.4rem;
+    font-size: 0.28rem;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+.cjx-huluobo .cjx-xinxi .cjx-banben .cjx-jiantou {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.55rem;
+    font-size: 0.28rem;
+    font-family: "微软雅黑";
+    color: #6ec3e7;
+}
+
+.cjx-xuanxiang {
+    width: 5.7rem;
+    height: 0.85rem;
+    border-radius: 10rem;
+    background: #2a3441;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.cjx-xuanxiang .cjx-left {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.1rem;
+    line-height: 0.7rem;
+    width: 2.5rem;
+    height: 0.7rem;
+    background: #29a6dc;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0.07rem;
+    left: 0.1rem;
+}
+
+.cjx-xuanxiang .cjx-right {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.1rem;
+    line-height: 0.7rem;
+    width: 2.5rem;
+    height: 0.7rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0.07rem;
+    right: 0.1rem;
+}
+
+.cjx-xuanxiang .cjx-left-1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.1rem;
+    line-height: 0.7rem;
+    width: 2.5rem;
+    height: 0.7rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0.07rem;
+    left: 0.1rem;
+}
+
+.cjx-xuanxiang .cjx-right-1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.1rem;
+    background: #29a6dc;
+    line-height: 0.7rem;
+    width: 2.5rem;
+    height: 0.7rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0.07rem;
+    right: 0.1rem;
+}
+
+.cjx-fankui {
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.cjx-fankui .cjx-wenben {
+    position: absolute;
+    left: 0.2rem;
+    width: 7rem;
+    height: 3.5rem;
+    border: none;
+    box-shadow: 0rem 0rem 0.8rem 0.1rem #CCCCCC;
+}
+
+.cjx-fankui .cjx-start {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.68rem;
+    width: 5.6rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    background: #29DCBC;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+
+.cjx-version {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 7rem;
+    height: 8rem;
+    box-shadow: 0rem 0rem 0.8rem 0.1rem #CCCCCC;
+    padding: 1rem;
+}
+
+.cjx-version .cjx-title {
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.cjx-version .cjx-titleeng {
+    text-align: center;
+    font-size: 0.08rem;
+}
+
+.cjx-version .cjx-zhengwen {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 0.16rem;
+}
+
+#cjx-none {
+    border-bottom: none;
+}
+
+#cjx-icon {
+    top: 0.15rem;
+    left: 0rem;
+    background: url(/book/home2/images/myinfo/4-my_07.jpg);
+    background-size: 100% 100%;
+}
+
+#cjx-icon1 {
+    top: 0.15rem;
+    left: 0rem;
+    background: url(/book/home2/images/myinfo/4-my_10.jpg);
+    background-size: 100% 100%;
+}
+
+#cjx-quxiao {
+    right: 1rem;
+    top: 5rem;
+    width: 3rem;
+}
+
+#cjx-nan {
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 0.8rem 0.1rem #CCCCCC;
+    background: url(/book/home2/images/myinfo/4-sex_10.jpg) center;
+    background-size: 120% 120%;
+}
+
+#cjx-nv {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 0.8rem 0.1rem #CCCCCC;
+    background: url(/book/home2/images/myinfo/4-sex_07.jpg) center;
+    background-size: 120% 120%;
+}

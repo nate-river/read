@@ -1,0 +1,360 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'icon-font';
+    src: url('/book/home2/css/iconfont1.woff');
+}
+
+.icon-font {
+    font-family: 'icon-font' !important;
+}
+
+/*.icon-fanhuijian:before {
+    content: "\e604";
+}*/
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+#sy-34 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#sy-34 .zhezhaos {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#sy-34 .zhezhao {
+    width: 100%;
+    height: 13.3rem;
+}
+
+#sy-34 .zhezhao #header2 {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+    overflow: hidden;
+}
+
+#sy-34 .zhezhao #header2 .circle, #sy-34 .zhezhao #header2 .circle2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.28rem;
+    left: 0.23rem;
+}
+
+#sy-34 .zhezhao #header2 .circle .icon, #sy-34 .zhezhao #header2 .circle2 .icon {
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #3daedf;
+}
+
+#sy-34 .zhezhao #header2 .circle a, #sy-34 .zhezhao #header2 .circle2 a {
+    color: #3daedf;
+}
+
+#sy-34 .zhezhao #header2 .wypj {
+    width: 1.6rem;
+    height: 0.65rem;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 0.1rem;
+}
+
+#sy-34 .zhezhao #header2 .wypj span:nth-of-type(1) {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+}
+
+#sy-34 .zhezhao #header2 .wypj span:nth-of-type(2) {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+#sy-34 .zhezhao .xing {
+    width: 100%;
+    height: 1.6rem;
+    border-bottom: 2px solid #999;
+    overflow: hidden;
+}
+
+#sy-34 .zhezhao .xing ul {
+    width: 5rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+}
+
+#sy-34 .zhezhao .xing ul li {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.1rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/xing.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-34 .zhezhao .pinglun {
+    width: 7rem;
+    height: 3.25rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    padding-top: 0.05rem;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+#sy-34 .zhezhao .pinglun textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+#sy-34 .zhezhao .pinglun p {
+    width: 6.6rem;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 0.2rem;
+}
+
+#sy-34 .zhezhao .fabu {
+    width: 1.5rem;
+    height: 0.8rem;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    background: #28DD8B;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+}
+
+#sy-34 .zhezhao .tc {
+    width: 4.8rem;
+    height: 3rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none;
+}
+
+#sy-34 .zhezhao .tc .tc-top {
+    width: 100%;
+    height: 0.8rem;
+    background-image: url("/book/home2/images/bookpage/pl-tbj.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+
+#sy-34 .zhezhao .tc .tc-top .tc-t {
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+    background-image: url("/book/home2/images/bookpage/pingl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-34 .zhezhao .tc .tc-top span:nth-of-type(1) {
+    width: 2.5rem;
+    float: left;
+    font-size: 12px;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+#sy-34 .zhezhao .tc .tc-top span:nth-of-type(2) {
+    width: 2.5rem;
+    float: left;
+    font-size: 12px;
+    margin-left: 0.1rem;
+}
+
+#sy-34 .zhezhao .tc .pl-cg {
+    width: 3rem;
+    height: 0.65rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+#sy-34 .zhezhao .tc .pl-cg span:nth-of-type(1) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+#sy-34 .zhezhao .tc .pl-cg span:nth-of-type(2) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+#sy-34 .zhezhao .tc .qx-cg {
+    width: 100%;
+    height: 0.58rem;
+    margin-top: 0.3rem;
+}
+
+#sy-34 .zhezhao .tc .qx-cg .qx {
+    width: 1.95rem;
+    height: 0.58rem;
+    border: 1px solid #28dd8b;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 0.58rem;
+    color: #28DD8B;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+#sy-34 .zhezhao .tc .qx-cg .qx span:nth-of-type(1) {
+    float: left;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #28DD8B;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+    margin-top: 0.25rem;
+}
+
+#sy-34 .zhezhao .tc .qx-cg .qx span:nth-of-type(2) {
+    float: right;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #28DD8B;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+    margin-top: 0.25rem;
+}
+
+#sy-34 .zhezhao .tc .qx-cg .cg {
+    width: 1.95rem;
+    height: 0.58rem;
+    border: 1px solid #28dd8b;
+    background: #28DD8B;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 0.58rem;
+    color: #fff;
+    float: right;
+    margin-right: 0.3rem;
+}
+
+#sy-34 .zhezhao .tc .qx-cg .cg span:nth-of-type(1) {
+    float: left;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+    margin-top: 0.25rem;
+}
+
+#sy-34 .zhezhao .tc .qx-cg .cg span:nth-of-type(2) {
+    float: right;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+    margin-top: 0.25rem;
+}

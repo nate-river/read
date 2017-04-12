@@ -1,0 +1,405 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+input::-webkit-input-placeholder{
+    line-height:0.88rem;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.login-1 {
+    height: 100%;
+    background: #F2F2F2;
+}
+
+.login-1 .login-top {
+    width: 100%;
+    height: auto;
+}
+
+.login-1 .login-top .login-nav {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+}
+
+.login-1 .login-top .login-nav .login-fanhui {
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("/book/home2/images/login/nav-fanhui.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0.25rem;
+}
+
+.login-1 .login-top .login-nav .login-title {
+    width: 6rem;
+    height: 0.88rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.36rem;
+    color: #f2f2f2;
+    line-height: 0.88rem;
+    left: 0.69rem;
+    text-align: center;
+}
+
+.login-1 .login-top .login-nav-bot {
+    width: 100%;
+    height: 3.48rem;
+    background: #2BA6DC;
+    position: relative;
+}
+
+.login-1 .login-top .login-nav-bot .login-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.43rem;
+    color: #fff;
+}
+
+.login-1 .login-bot {
+    width: 100%;
+    height: auto;
+    padding: 0 0.67rem;
+    background: #F2F2F2;
+    position: relative;
+}
+
+.login-1 .login-bot .kong {
+    background: #F2F2F2;
+    width: 100%;
+    height: 1.37rem;
+}
+
+.login-1 .login-bot .mingyan {
+    background: #F2F2F2;
+    width: 100%;
+    height: auto;
+    color: #0a196b;
+    font-size: 0.24rem;
+    padding-bottom: 0.9rem;
+    font-family: '苹方';
+}
+
+.login-1 .login-bot .mingyan h3 {
+    padding: 0.09rem 0;
+    font-size: 0.24rem;
+    font-weight: normal;
+}
+
+.login-1 .login-bot .mingyan .one {
+    text-align: center;
+}
+
+.login-1 .login-bot .mingyan .two {
+    text-align: right;
+}
+
+.login-1 .login-bot .login-form {
+    width: 100%;
+    height: auto;
+}
+
+.login-1 .login-bot .login-form .login-user, .login-1 .login-bot .login-form .login-password {
+    width: 100%;
+    height: 0.88rem;
+    border-radius: 0.5rem;
+    border: 1px solid #3D91FD;
+    margin-bottom: 0.38rem;
+    background: #fff;
+}
+
+.login-1 .login-bot .login-form .login-user div:nth-child(1), .login-1 .login-bot .login-form .login-password div:nth-child(1) {
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.45rem;
+}
+
+.login-1 .login-bot .login-form .login-user input, .login-1 .login-bot .login-form .login-password input {
+    width: 4.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 1.23rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.28rem;
+    line-height: 0.88rem;
+    color: #999;
+    z-index: 20;
+    letter-spacing: 0.02rem;
+}
+
+.login-1 .login-bot .login-form .login-user .tishi, .login-1 .login-bot .login-form .login-password .tishi {
+    width: 4.5rem;
+    height: 0.28rem;
+    font-size: 0.28rem;
+    color: #999;
+    line-height: 0.28rem;
+    position: absolute;
+    top: 0;
+    display: none;
+    bottom: 0;
+    margin: auto;
+    left: 1.23rem;
+    z-index: 10;
+}
+
+.login-1 .login-bot .login-form .login-user .u-img {
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("/book/home2/images/login/login-user1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.login-1 .login-bot .login-form .login-password .p-img {
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("/book/home2/images/login/login-pass1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.login-1 .login-bot .login-form .login-fs {
+    width: 100%;
+    height: 0.25rem;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-find, .login-1 .login-bot .login-form .login-fs .login-sign {
+    display: inline-block;
+    width: 1.76rem;
+    height: 100%;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-find div:nth-child(1), .login-1 .login-bot .login-form .login-fs .login-sign div:nth-child(1) {
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-find a, .login-1 .login-bot .login-form .login-fs .login-sign a {
+    display: inline-block;
+    width: auto;
+    height: 0.25rem;
+    font-size: 0.22rem;
+    color: #666;
+    line-height: 0.26rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.5rem;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-find {
+    position: absolute;
+    left: 0.44rem;
+    top: 0;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-find div {
+    background-image: url("/book/home2/images/login/login-mima.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-sign {
+    position: absolute;
+    right: 0.44rem;
+    top: 0;
+}
+
+.login-1 .login-bot .login-form .login-fs .login-sign div {
+    background-image: url("/book/home2/images/login/login-zhuce.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.login-1 .login-bot .login-form .login-button {
+    margin-top: 0.94rem;
+    width: 100%;
+    height: 0.68rem;
+}
+
+.login-1 .login-bot .login-form .login-button .login-btn {
+    width: 5.64rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50px;
+    background: #3DBFFD;
+    z-index: 10;
+}
+
+.login-1 .login-bot .login-form .login-button .login-btn .l-circle {
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 20;
+}
+
+.login-1 .login-bot .login-form .login-button .login-btn .l-circle:nth-of-type(1) {
+    left: 0.32rem;
+}
+
+.login-1 .login-bot .login-form .login-button .login-btn .l-circle:nth-of-type(2) {
+    right: 0.32rem;
+}
+
+.login-1 .login-bot .login-form .login-button .login-btn .rightNow {
+    display: block;
+    width: 4.96rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.68rem;
+}
+
+.login-1 .login-bot .login-alert {
+    width: 4.5rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 50%;
+    margin-top: -1rem;
+    left: 50%;
+    margin-left: -2.25rem;
+    font-size: 0.28rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.login-1 .login-dis {
+    display: none;
+}
+

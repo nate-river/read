@@ -1,0 +1,287 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+body {
+    background: #fafafa;
+}
+
+.feedback-23 {
+    background: #fafafa;
+    height: 100vh;
+}
+
+.feedback-23 .feedback-top {
+    width: 100%;
+    height: auto;
+}
+
+.feedback-23 .feedback-top .feedback-nav {
+    width: 100%;
+    height: 1rem;
+    background: #29a6dc;
+}
+
+.feedback-23 .feedback-top .feedback-nav .login-fanhui {
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("/book/home2/images/myinfo/d4.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0.25rem;
+}
+
+.feedback-23 .feedback-top .feedback-nav .login-title {
+    width: 6rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.69rem;
+    text-align: center;
+}
+
+.feedback-23 .feedback-top .feedback-nav .login-title .one {
+    width: 6rem;
+    height: 0.36rem;
+    font-size: 0.36rem;
+    color: #f2f2f2;
+    line-height: 0.36rem;
+    text-align: center;
+    margin-top: 0.19rem;
+}
+
+.feedback-23 .feedback-top .feedback-nav .login-title .two {
+    width: 0.35rem;
+    height: 0.04rem;
+    background-image: url("/book/home2/images/myinfo/nav-line.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 2.84rem;
+    margin-top: 0.04rem;
+}
+
+.feedback-23 .feedback-top .feedback-nav .login-title .thr {
+    width: 6rem;
+    height: 0.2rem;
+    font-size: 0.2rem;
+    color: #90dcff;
+    line-height: 0.2rem;
+    text-align: center;
+    margin-top: 0.09rem;
+}
+
+.feedback-23 .feedback-bot {
+    width: 100%;
+    height: auto;
+    padding: 0.16rem 0.24rem;
+}
+
+.feedback-23 .feedback-bot .feedback-input {
+    width: 100%;
+    height: 3.26rem;
+    box-shadow: 0 0 0.12rem rgba(198, 198, 198, 0.75);
+    border-radius: 0.1rem;
+}
+
+.feedback-23 .feedback-bot .feedback-input textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 0.26rem 0.17rem;
+    outline: none;
+    font-size: 0.22rem;
+    color: #333;
+    line-height: 0.24rem;
+}
+
+.feedback-23 .feedback-bot .feedback-input .fb-reminder {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0.17rem;
+    top: 0.26rem;
+    background: pink;
+}
+
+.feedback-23 .feedback-bot .feedback-input .fb-reminder .fb-img {
+    width: 0.34rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/book/home2/images/myinfo/feedback1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.feedback-23 .feedback-bot .feedback-input .fb-reminder .fb-remd {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+}
+
+.feedback-23 .feedback-bot .feedback-input .fb-reminder .fb-remd h2, .feedback-23 .feedback-bot .feedback-input .fb-reminder .fb-remd h4 {
+    font-weight: normal;
+}
+
+.feedback-23 .feedback-bot .feedback-input .fb-reminder .fb-remd h2 {
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.28rem;
+    margin-bottom: 0.08rem;
+}
+
+.feedback-23 .feedback-bot .feedback-input .fb-reminder .fb-remd h4 {
+    font-size: 0.16rem;
+    color: #999;
+    line-height: 0.16rem;
+}
+
+.feedback-23 .feedback-bot .register-button {
+    margin-top: 0.84rem;
+    width: 100%;
+    height: 0.68rem;
+}
+
+.feedback-23 .feedback-bot .register-button .register-btn {
+    width: 5.64rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50px;
+    background: #28dd8b;
+    z-index: 10;
+}
+
+.feedback-23 .feedback-bot .register-button .register-btn .l-circle {
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 20;
+}
+
+.feedback-23 .feedback-bot .register-button .register-btn .l-circle:nth-of-type(1) {
+    left: 0.32rem;
+}
+
+.feedback-23 .feedback-bot .register-button .register-btn .l-circle:nth-of-type(2) {
+    right: 0.32rem;
+}
+
+.feedback-23 .feedback-bot .register-button .register-btn .rightNow {
+    display: block;
+    width: 4.96rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.68rem;
+}
+
+.feedback-23 .feedback-dis {
+    display: none;
+}

@@ -1,0 +1,532 @@
+<div>
+    <!--公共部分-->
+    <common></common>
+    <!--右侧部分-->
+    <div id="right">
+        <!--独自部分-->
+        <div id="booklist">
+            <ol class="breadcrumb breadcrumb1">
+                <li class="active"><a href="#/booklist">分类管理</a></li>
+            </ol>
+            <div class="col-md-12" style="margin-top:56px;">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading"><a href="javascript:;" class="add1" ng-click="add1()">添加分类<i class="glyphicon glyphicon-plus" style="margin-left:10px;"></i></a></div>
+                    <!--追加页面中的元素-->
+                    <ul class="col-md-12 title-header list-group" style="margin-top:8px;height:45px;">
+                        <li class="list-group-item" style="overflow:hidden;background-color:#ddd;">
+                            <!--<div class="col-md-3" style="margin-top:8px;"><input type="checkbox"></div>-->
+                            <div class="col-md-3" style="margin-top:8px;">展开</div>
+                            <div class="col-md-3"><h5>catid</h5></div>
+                            <div class="col-md-3"><h5>分类名称</h5></div>
+                            <div class="col-md-3"><h5>管理操作</h5></div>
+                        </li>
+                    </ul>
+                    <div class="fenlei">
+                        <!--一级标题-->
+                        <ul ng-repeat="v in listss track by $index" class="col-md-12 yiji list-group"  >
+                            <li class="title-1 title list-group-item"  id="{{v.id}}" >
+                                <div class="col-md-3"><input type="checkbox"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                                <div class="col-md-3">{{v.id}}</div>
+                                <div class="col-md-3" ng-click="zhankai(v.id)">{{v.name}}</div>
+                                <div class="col-md-3"><a href="javascript:;" class="add" ng-click="adderjilist(v.id)">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change" ng-click="fenleigai(v.id)">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del" ng-click="fenlistdel(v.id)">删除</a></div>
+                            </li>
+                            <!--二级标题-->
+                            <ul ng-repeat="k in v.erji track by $index" class="col-md-12 erji list-group {{k.parentid}}" style="padding:0;" >
+                                    <li class="title-2 title list-group-item" id="{{k.id}}">
+                                        <div class="col-md-3"><input type="checkbox"><span class="glyphicon glyphicon-chevron-right" style="margin-left:30px;"></span></div>
+                                        <div class="col-md-3">{{k.id}}</div>
+                                        <div class="col-md-3"  ng-click="erjizhankai(k.id)">{{k.name}}</div>
+                                        <div class="col-md-3"><a href="javascript:;" class="add" ng-click="addsanjilist(k.parentid,k.id)" >添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change" ng-click="erjichange(k.parentid,k.id)">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del" ng-click="erjidel(k.parentid,k.id)">删除</a></div>
+                                    </li>
+
+                                <!--三级标题-->
+                                    <ul ng-repeat="j in k.sanji track by $index" class="col-md-12 sanji list-group" style="padding:0;">
+                                        <li class="title-3 title list-group-item" id="{{j.id}}">
+                                            <div class="col-md-3"><input type="checkbox"></div>
+                                            <div class="col-md-3">{{j.id}}</div>
+                                            <div class="col-md-3">{{j.name}}</div>
+                                            <div class="col-md-3"><a href="javascript:;" class="change" ng-click="sanjichange(j.grandid,j.parentid,j.id)">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del" ng-click="snajidel(j.grandid,j.parentid,j.id)">删除</a></div>
+                                        </li>
+                                    </ul>
+                            </ul>
+                        </ul>
+                    </div>
+
+
+
+                    <!--<table class="table list-table table-bordered table-hover" style="">
+                        <thead>
+                        <tr>
+                            <th>排序</th>
+                            <th>catid</th>
+                            <th>分类名称</th>
+                            <th>管理操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        &lt;!&ndash;一级标题&ndash;&gt;
+                        <div class="list-title1">
+                            <tr class="title-1 danger">
+                                <td><input type="text" size="3" value="1">&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                <td>1</td>
+                                <td>网络文学</td>
+                                <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                            </tr>
+                            &lt;!&ndash;二级标题&ndash;&gt;
+                            <div class="list-title2">
+                                <tr class="title-2 success">
+                                    <td><input type="text" size="3" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                    <td>2</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;├─女生专区</td>
+                                    <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                </tr>
+                                &lt;!&ndash;三级标题&ndash;&gt;
+                                    <div class="list-title3">
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="3"></td>
+                                            <td>3</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─仙侠</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="4"></td>
+                                            <td>4</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─都市</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="5"></td>
+                                            <td>5</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─职场</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="6"></td>
+                                            <td>6</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─短篇</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                    </div>
+                            </div>
+                            &lt;!&ndash;二级标题&ndash;&gt;
+                            <div class="list-title2">
+                                <tr class="title-2 success">
+                                    <td><input type="text" size="3" value="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                    <td>7</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;└─男生专区</td>
+                                    <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                </tr>
+                                    &lt;!&ndash;三级标题&ndash;&gt;
+                                    <div class="list-title3">
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="8"></td>
+                                            <td>8</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─玄幻</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="9"></td>
+                                            <td>9</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─奇幻</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="10"></td>
+                                            <td>10</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─武侠</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="11"></td>
+                                            <td>11</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─军事</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="12"></td>
+                                            <td>12</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─灵异</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="13"></td>
+                                            <td>13</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─科幻</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                        <tr class="title-3">
+                                            <td><input type="text" size="3" value="14"></td>
+                                            <td>14</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─游戏</td>
+                                            <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                        </tr>
+                                    </div>
+                            </div>
+                        </div>
+                        &lt;!&ndash;图书分类&ndash;&gt;
+                        &lt;!&ndash;一级标题&ndash;&gt;
+                            <tr class=" danger">
+                                <td><input type="text" size="3" value="15">&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                <td>15</td>
+                                <td>图书分类</td>
+                                <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                            </tr>
+                            &lt;!&ndash;文科&ndash;&gt;
+                            &lt;!&ndash;二级标题&ndash;&gt;
+                                <tr class=" success">
+                                    <td><input type="text" size="3" value="16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                    <td>16</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;├─文科</td>
+                                    <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                </tr>
+                                &lt;!&ndash;三级标题&ndash;&gt;
+                                        <tr>
+                                        <td><input type="text" size="3" value="17"></td>
+                                        <td>17</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─经营</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="18"></td>
+                                        <td>18</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─心理</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="19"></td>
+                                        <td>19</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─人文社科</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="20"></td>
+                                        <td>20</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─文学</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="21"></td>
+                                        <td>21</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─历史</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="22"></td>
+                                        <td>22</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─政治</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                            &lt;!&ndash;二级标题&ndash;&gt;
+                                &lt;!&ndash;理科&ndash;&gt;
+                                <tr class=" success">
+                                    <td><input type="text" size="3" value="23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                    <td>23</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;├─理科</td>
+                                    <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                </tr>
+                            &lt;!&ndash;三级标题&ndash;&gt;
+                                    <tr>
+                                        <td><input type="text" size="3" value="24"></td>
+                                        <td>24</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─计算机</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="25"></td>
+                                        <td>25</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─心理</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="26"></td>
+                                        <td>26</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─军事</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                            &lt;!&ndash;二级标题&ndash;&gt;
+                            &lt;!&ndash;综合&ndash;&gt;
+                                <tr class=" success">
+                                    <td><input type="text" size="3" value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                    <td>27</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;├─综合</td>
+                                    <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                </tr>
+                                &lt;!&ndash;三级标题&ndash;&gt;
+                                    <tr>
+                                        <td><input type="text" size="3" value="28"></td>
+                                        <td>28</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─生活</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="29"></td>
+                                        <td>29</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─外语</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="30"></td>
+                                        <td>30</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─教材辅导</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="31"></td>
+                                        <td>31</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─教育</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="32"></td>
+                                        <td>32</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─法律</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="33"></td>
+                                        <td>33</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─少儿</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="34"></td>
+                                        <td>34</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─旅游</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="35"></td>
+                                        <td>35</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─艺术设计</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                            &lt;!&ndash;二级标题&ndash;&gt;
+                            &lt;!&ndash;其它&ndash;&gt;
+                                <tr class=" success">
+                                    <td><input type="text" size="3" value="36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down" ></i></td>
+                                    <td>36</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;└─其它</td>
+                                    <td><a href="javascript:;">添加子分类</a>&nbsp;|&nbsp;<a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                </tr>
+                                &lt;!&ndash;三级标题&ndash;&gt;
+                                    <tr>
+                                        <td><input type="text" size="3" value="37"></td>
+                                        <td>37</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─小说</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="38"></td>
+                                        <td>38</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─动漫绘本</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="39"></td>
+                                        <td>39</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─成功励志</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="40"></td>
+                                        <td>40</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─传记</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" size="3" value="41"></td>
+                                        <td>41</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─健康养生</td>
+                                        <td><a href="javascript:;" class="change">修改</a>&nbsp;|&nbsp;<a href="javascript:;" class="del">删除</a></td>
+                                    </tr>
+                        </tbody>
+                    </table>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--这是点击修改的页面-->
+    <div class="mask-booklist" ng-show="xianshi">
+        <div class="juzhong">
+            <div class="container">
+                <div class="bs-example list-group" >
+                    <form class="form-horizontal" role="form"  >
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>id</label>
+                            <div class="col-sm-10">
+                                <input disabled="" type="text " class="form-control input-id"  value="{{curcon.id}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>分类名称</label>
+                            <div class="col-sm-10">
+                                <input type="text " class="form-control input-booklistname"  placeholder="请输入榜单名称" value="{{curcon.name}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary " id="quxiaao-done" ng-click="quxiao1()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                                 <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="done(curcon.id)" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--这是点击二级修改的页面-->
+    <div class="mask-erjichange" ng-show="xianshi22">
+        <div class="juzhong">
+            <div class="container">
+                <div class="bs-example list-group" >
+                    <form class="form-horizontal" role="form"  >
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>id</label>
+                            <div class="col-sm-10">
+                                <input disabled="" type="text " class="form-control input-id"  value="{{curcon22.id}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>分类名称</label>
+                            <div class="col-sm-10">
+                                <input type="text " class="form-control input-booklistname"  placeholder="请输入榜单名称" value="{{curcon22.name}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary " id="quxiao2" ng-click="quxiao2()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                                <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="erjichangedone(curcon22.id)" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--这是点击三级修改的页面-->
+    <div class="mask-sanjichange" ng-show="xianshi33">
+        <div class="juzhong">
+            <div class="container">
+                <div class="bs-example list-group" >
+                    <form class="form-horizontal" role="form"  >
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>id</label>
+                            <div class="col-sm-10">
+                                <input disabled="" type="text " class="form-control input-id"  value="{{curcon33.id}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>分类名称</label>
+                            <div class="col-sm-10">
+                                <input type="text " class="form-control input-booklistname"  placeholder="请输入榜单名称" value="{{curcon33.name}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                             <button type="submit" class="btn btn-primary " id="quxiao3" ng-click="quxiao3()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                                <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="sanjichangedone(curcon33.grandid,curcon33.parentid,curcon33.id)" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--这是点击添加分类的页面-->
+    <div class="mask-booklist-fenlei" ng-show="xianshi1">
+        <div class="juzhong">
+            <div class="container">
+                <div class="bs-example list-group" >
+                    <form class="form-horizontal" role="form"  >
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>id</label>
+                            <div class="col-sm-10">
+                                <input disabled="" type="text " class="form-control input-id"  value="{{addcur.id}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>分类名称</label>
+                            <div class="col-sm-10">
+                                <input type="text " class="form-control input-booklistname"  placeholder="请输入榜单名称" value="{{addcur.name}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                             <button type="submit" class="btn btn-primary " id="quxiao4" ng-click="quxiao4()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                                <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="fenleidone()" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--添加二级子分类的页面-->
+    <div class="mask-booklist-erji" ng-show="xianshi2">
+        <div class="juzhong">
+            <div class="container">
+                <div class="bs-example list-group" >
+                    <form class="form-horizontal" role="form"  >
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>id</label>
+                            <div class="col-sm-10">
+                                <input disabled="" type="text " class="form-control input-id"  value="{{addtwocur.id}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>分类名称</label>
+                            <div class="col-sm-10">
+                                <input type="text " class="form-control input-booklistname"  placeholder="请输入榜单名称" value="{{addtwocur.name}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                             <button type="submit" class="btn btn-primary " id="quxiao5" ng-click="quxiao5()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                                <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="erjidone()" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--添加三级子分类的页面-->
+    <div class="mask-booklist-sanji" ng-show="xianshi3">
+        <div class="juzhong">
+            <div class="container">
+                <div class="bs-example list-group" >
+                    <form class="form-horizontal" role="form"  >
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>id</label>
+                            <div class="col-sm-10">
+                                <input disabled="" type="text " class="form-control input-id"  value="{{addsancur.id}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"><span class="necessary">*</span>分类名称</label>
+                            <div class="col-sm-10">
+                                <input type="text " class="form-control input-booklistname"  placeholder="请输入榜单名称" value="{{addsancur.name}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                             <button type="submit" class="btn btn-primary " id="quxiao6" ng-click="quxiao6()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                          
+                                <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="sanjidone()" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

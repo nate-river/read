@@ -1,0 +1,147 @@
+<div>
+    
+        <div class="messageS-21">
+            <div class="messageS-top">
+                <div class="messageS-nav">
+                    <a href='#/Myinfo' class="login-fanhui"></a>
+                    <div class="login-title">
+                        <div class="one">我的信息</div>
+                        <div class="two"></div>
+                        <div class="thr">MY INFORMATION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="messageS-bot">
+                <div class="messageS-sel">
+                    <div class="messageS-select">
+                        <div class="mS-left">
+                            <div class="mS-circle one"></div>
+                            <div class="mS-circle two"></div>
+                            <div class="mS-circle thr"></div>
+                            <div class="mS-circle four"></div>
+                        </div>
+                        <div class="mS-right messagse-dis">
+                            <div class="mS-circle one"></div>
+                            <div class="mS-circle two"></div>
+                            <div class="mS-circle thr"></div>
+                            <div class="mS-circle four"></div>
+                        </div>
+                        
+                        <div class="mS-left-font" id="xitongnews">
+                            <h2>系统信息</h2>
+                            <h4>system information</h4>
+                        </div>
+                        <div class="mS-right-font " id="mynews">
+                            <h2>我的信息</h2>
+                            <h4 >my information</h4>
+                        </div>
+                        
+                        <div ng-line></div>
+                    </div>
+                </div>
+                <div class="messageS-con">
+                    <ul class="mS-list">
+                        <li class="" >
+                            <div class="mS-list-img"></div>
+                            <div class="mS-list-title">
+                                <h2>推荐新书</h2>
+                                <h4>recommend a book</h4>
+                            </div>
+                            <div class="mS-list-more"></div>
+                        </li>
+                       <!-- <li class="">
+                            <div class="mS-list-img"></div>
+                            <div class="mS-list-title">
+                                <h2>推荐新书</h2>
+                                <h4>recommend a book</h4>
+                            </div>
+                            <div class="mS-list-more"></div>
+                        </li>
+                        <li class="">
+                            <div class="mS-list-img"></div>
+                            <div class="mS-list-title">
+                                <h2>推荐新书</h2>
+                                <h4>recommend a book</h4>
+                            </div>
+                            <div class="mS-list-more"></div>
+                        </li>
+                        <li class="">
+                            <div class="mS-list-img"></div>
+                            <div class="mS-list-title">
+                                <h2>推荐新书</h2>
+                                <h4>recommend a book</h4>
+                            </div>
+                            <div class="mS-list-more"></div>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--我的信息-->
+                <div class="messageM-con messagse-dis">
+                    <ul class="mM-list">
+                        <li class="" ng-repeat=" v in mynews">
+                            <div class="mM-list-img"></div>
+                            <div class="mM-list-name">
+                                <h2>{{v.title}}</h2>
+                                <h4>run the carrots</h4>
+                                <div class="mM-list-con">{{v.jianjie}}</div>
+                            </div>
+                            <div class="mM-list-more">
+                                <!--<div class="mM-list-moreImg"></div>-->
+                                <span class="mM-list-date">2016-11-10</span>
+                            </div>
+                        </li>
+                       <!-- <li class="">
+                            <div class="mM-list-img"></div>
+                            <div class="mM-list-name">
+                                <h2>奔跑的胡萝卜</h2>
+                                <h4>run the carrots</h4>
+                                <div class="mM-list-con">奥黛丽赫本散落人间的天使以前只是从网络上报纸上看到她片面迹,没想到</div>
+                            </div>
+                            <div class="mM-list-more">
+                                &lt;!&ndash;<div class="mM-list-moreImg"></div>&ndash;&gt;
+                                <span class="mM-list-date">2016-11-10</span>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="mM-list-img"></div>
+                            <div class="mM-list-name">
+                                <h2>奔跑的胡萝卜</h2>
+                                <h4>run the carrots</h4>
+                                <div class="mM-list-con">奥黛丽赫本散落人间的天使以前只是从网络上报纸上看到她片面迹,没想到</div>
+                            </div>
+                            <div class="mM-list-more">
+                                &lt;!&ndash;<div class="mM-list-moreImg"></div>&ndash;&gt;
+                                <span class="mM-list-date">2016-11-10</span>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="mM-list-img"></div>
+                            <div class="mM-list-name">
+                                <h2>奔跑的胡萝卜</h2>
+                                <h4>run the carrots</h4>
+                                <div class="mM-list-con">奥黛丽赫本散落人间的天使以前只是从网络上报纸上看到她片面迹,没想到</div>
+                            </div>
+                            <div class="mM-list-more">
+                                &lt;!&ndash;<div class="mM-list-moreImg"></div>&ndash;&gt;
+                                <span class="mM-list-date">2016-11-10</span>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="mM-list-img"></div>
+                            <div class="mM-list-name">
+                                <h2>奔跑的胡萝卜</h2>
+                                <h4>run the carrots</h4>
+                                <div class="mM-list-con">奥黛丽赫本散落人间的天使以前只是从网络上报纸上看到她片面迹,没想到</div>
+                            </div>
+                            <div class="mM-list-more">
+                                &lt;!&ndash;<div class="mM-list-moreImg"></div>&ndash;&gt;
+                                <span class="mM-list-date">2016-11-10</span>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+</div>

@@ -1,0 +1,9 @@
+ <div>
+	 <ul>
+		 <li class="lis" ng-repeat='v in pics' style="background-image:url({{v.de}});" ng-click="dianji($index)">
+             <div class="fgline" ng-if='($index!==2)'></div>
+             <div ng-class="{active:($index==aa)}" class="showing" style="background-image:url({{v.hi}});" ng-if="bianliang==1"></div>
+             <div ng-class="{active:($index==bb)}" class="showing" style="background-image:url({{v.hi}});" ng-if="bianliang==2"></div>
+         </li>
+	 </ul>
+ </div>

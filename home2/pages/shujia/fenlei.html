@@ -1,0 +1,221 @@
+<div>
+        <div class="box" id="box">
+            <div class="header">
+                <div class="zi">{{detail1}}</div>
+                <ul class="xian">
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id="sjMY">
+                    supernatura
+                </div>
+                <a href="#/search" class="xhtui"></a>
+                <a href="javascript:;" ng-click="flback()" class="sousoicon" id="fenlei"></a>
+            </div>
+            <div id="lc-head" class="bst-11">
+                <div class="pre"></div>
+                <div class="lc-nav">
+                      <booktab drops='lc-main' pics="[{de:'/book/home2/images/bookcity/tj.png',hi:'/book/home2/images/bookcity/tj1.png'},{de:'/book/home2/images/bookcity/rd.png',hi:'/book/home2/images/bookcity/rd1.png'},{de:'/book/home2/images/bookcity/sj.png',hi:'/book/home2/images/bookcity/sj1.png'}]"  class="lc-nav"></booktab>
+                </div>
+            </div>
+            <div id="zhanwei"></div>
+            <!--推荐展示内容-->
+            <div class="lc-main active">
+                <div ng-repeat="v in tuijian track by $index" ng-if="v.type=='tuijian'">
+                    <div class="title-top-box" ng-repeat="k in v.books track by $index">
+                        <a href="#/remark?id={{k.id}}" class="picture" style="background-image:url('{{k.img}}')"></a>
+                        <div class="right-box">
+                            <h1>推荐《{{k.title}}》</h1>
+                            <h2>{{k.en}}</h2>
+                            <h3>
+                                {{k.description}}
+                            </h3>
+                            <div class="bottom-box-left">
+                                <p>作者：{{k.author}}</p>
+                                <p>字数：{{k.zishu}}</p>
+                                <div class="xi-box" ng-if="k.xin==0">
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==1">
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==2">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==3">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==4">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==5">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                </div>
+                            </div>
+                            <div class="bottom-box-right">
+                                <div class="circleL"></div>
+                                <a href="#/remark?search=ri&id={{k.id}}"><div class="wenzi">点这里查看</div></a>
+                                <div class="circleR"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--热读展示内容-->
+            <div class="lc-main">
+                <div ng-repeat="v in tuijian track by $index" ng-if="v.type=='redu'">
+                    <div class="title-top-box" ng-repeat="k in v.books track by $index">
+                        <a href="#/remark?id={{k.id}}" class="picture" style="background-image:url('{{k.img}}')"></a>
+                        <div class="right-box">
+                            <h1>热读《{{k.title}}》</h1>
+                            <h2>{{k.en}}</h2>
+                            <h3>
+                                {{k.description}}
+                            </h3>
+                            <div class="bottom-box-left">
+                                <p>作者：{{k.author}}</p>
+                                <p>字数：{{k.zishu}}</p>
+                                <div class="xi-box" ng-if="k.xin==0">
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==1">
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==2">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==3">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==4">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==5">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                </div>
+                            </div>
+                            <div class="bottom-box-right">
+                                <div class="circleL"></div>
+                                <a href="#/remark?search=zhou&id={{k.id}}"><div class="wenzi">点这里查看</div></a>
+                                <div class="circleR"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--上架展示内容-->
+            <div class="lc-main">
+                <div ng-repeat="v in tuijian track by $index" ng-if="v.type=='shangjia'">
+                    <div class="title-top-box" ng-repeat="k in v.books track by $index">
+                        <a href="#/remark?id={{k.id}}" class="picture" style="background-image:url('{{k.img}}')"></a>
+                        <div class="right-box">
+                            <h1>上架《{{k.title}}》</h1>
+                            <h2>{{k.en}}</h2>
+                            <h3>
+                                {{k.description}}
+                            </h3>
+                            <div class="bottom-box-left">
+                                <p>作者：{{k.author}}</p>
+                                <p>字数：{{k.zishu}}</p>
+                                <div class="xi-box" ng-if="k.xin==0">
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==1">
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==2">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==3">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==4">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi xi2"></div>
+                                </div>
+                                <div class="xi-box" ng-if="k.xin==5">
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                    <div class="xi"></div>
+                                </div>
+                            </div>
+                            <div class="bottom-box-right">
+                                <div class="circleL"></div>
+                                <a href="#/remark?search=zong&id={{k.id}}"><div class="wenzi">点这里查看</div></a>
+                                <div class="circleR"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

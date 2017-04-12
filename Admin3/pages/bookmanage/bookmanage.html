@@ -1,0 +1,226 @@
+<div>
+    <!--公共部分-->
+    <common></common>
+    <!--右侧部分-->
+    <div id="right">
+        <!--独自部分-->
+        <div id="bookmanage">
+            <ol class="breadcrumb breadcrumb1">
+                <li class="active"><a href="#/bookmanage">图书管理</a></li>
+            </ol>
+            <div class="col-md-12">
+                <!-- <my-div>-->
+                <div class="col-md10">
+                    <ol class="breadcrumb" style="margin-bottom:0;">
+                        <li class="active add" ng-click="add()"><a href="javascript:;">添加新书 <span class="glyphicon glyphicon-plus"></span></a></li>
+                    </ol>
+                  <!--  <div class="panel-heading"><a href="javascript:;" class="add1" ng-click="add()">添加新书<i class="glyphicon glyphicon-plus" style="margin-left:10px;"></i></a></div>-->
+                    <div class="bs-example list-group addbook">
+                        <form class="form-horizontal" role="form" action="http://localhost/uek-tushu/index.php/admin/books/updata" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>图书名称</label>
+                                <div class="col-sm-10">
+                                    <input type="text " name="name" class="form-control input-name"  placeholder="请输入图书名称">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>作者</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="username" class="form-control input-autor" placeholder="请输入作者名称">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"><span class="necessary">*</span>文件上传</label>
+                                <div class="col-sm-10" style="margin-top:8px;">
+                                    <input type="file" name="txt">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>图片上传</label>
+                                <div class="col-sm-10" style="margin-top:8px;">
+                                    <input type="file" name="img">
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>关键词</label>
+                                <div class="col-sm-10" style="margin-top:8px;">
+                                    <input type="text" name="keyword">每个关键词之间用 , 隔开
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>标题</label>
+                                <div class="col-sm-10" style="margin-top:8px;">
+                                    <input type="text" name="title">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>图书类型</label>
+                                <div class="col-sm-10" style="margin-top:8px;">
+                                    <div class="col-md-4">
+                                        <select name="select1" class="form-control" id="select1">
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select name="select2" class="form-control" id="select2">
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select name="category_id" class="form-control" id="select3">
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label"><span class="necessary">*</span>图书描述</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control text-inner" rows="3" name="about"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="tj" name="recommend" value="1"> 点击推荐
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                 <button type="button" class="btn btn-primary " ng-click="quxiao2()">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                              
+                                    <button type="submit" class="btn btn-primary " ng-click="done()">&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--  </my-div>-->
+                <ol class="breadcrumb">
+                    <li class="active"><a href="#/bookmanage" ng-click="notalldel()">批量删除</a></li>
+                    <li class="active" ><a href="javascript:;" ng-click="alldel()">全部删除</a></li>
+                </ol>
+                <div class="ng-scope">
+
+                    <div class="bs-example4 user-list" data-example-id="contextual-table" style="padding:0;">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" class="checkbox" id="all-check" ng-click="allcheck()"></th>
+                                <th>图书图片</th>
+                                <th>图书名</th>
+                                <th>作者</th>
+                                <th>上传日期</th>
+                                <th>阅读量</th>
+                                <th>图书类型</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="active" ng-repeat="v in books" data-id="{{v.id}}">
+                                <th scope="row" class="fuxuan" id="fuxuan" ng-click="fuxuan()">
+                                    <input type="checkbox" class="checkbox" >
+                                </th>
+                                <td><a href="javascript:;" class="thumbnail"><img ng-src="{{v.img}}" alt=""></a></td>
+                                <td><a href="javascript:;">{{v.name}}</a></td>
+                                <td>{{v.username}}</td>
+                                <td>{{v.addtime}}</td>
+                                <td>{{v.reader}}</td>
+                                <td>{{v.categoryname}}</td>
+                                <td class="caozuo">
+                                    <span class="glyphicon glyphicon-pencil" ng-click="xiugai(v.id)"></span>
+                                    <span class="glyphicon glyphicon-remove" ng-click="remove(v.id)"></span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 点击修改出来的界面 -->
+    <div class="mask-bookmanage" ng-show="isShow">
+        <div class="juzhong">
+
+            <div class="container">
+            <div class="bs-example list-group" >
+                <form class="form-horizontal" role="form"  >
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label"><span class="necessary">*</span>图书名称</label>
+                        <div class="col-sm-10">
+                            <input type="text " class="form-control input-name"  placeholder="请输入图书名称"value="{{cur.name}}" data-id="{{cur.id}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label"><span class="necessary">*</span>作者</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control input-autor" placeholder="请输入作者名称" value="{{cur.autor}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="necessary">*</span>文件上传</label>
+                        <div class="col-sm-10" style="margin-top:8px;">
+                            <input type="file">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">图片上传</label>
+                        <div class="col-sm-10" style="margin-top:8px;">
+                            <input type="file">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label"><span class="necessary">*</span>图书类型</label>
+                        <div class="col-sm-10" style="margin-top:8px;">
+                            <div class="col-md-4">
+                                <select class="form-control" id="select4">
+                                    
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control" id="select5">
+                                   
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control" id="select6">
+                                   
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label"><span class="necessary">*</span>图书描述</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control text-inner" rows="3" value="{{cur.readnum}}"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" > 点击推荐
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-primary " id="quxiao" ng-click="quxiao()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                    
+                        
+                            <button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="xiugaidone()" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</div>

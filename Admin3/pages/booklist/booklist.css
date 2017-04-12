@@ -1,0 +1,313 @@
+#booklist input{
+    text-align:center;
+}
+#booklist tr.title-3{
+    height:0;
+}
+#booklist tr.active{
+    height:auto;
+}
+#booklist .col-md-3{
+    float:left;
+}
+#booklist .col-md-12{
+    margin-top:30px;
+}
+#booklist .title{
+    overflow:hidden;
+}
+#booklist .title-1{
+    /*background-color:rgba(0, 160, 233, 0.7) ;*/
+    background-color: #147FB7;
+    color:#fff;
+}
+
+#booklist .title-2{
+    background-color: #DFF0D8;
+}
+#booklist .title-3{
+    background-color: #F5F5F5;
+}
+#booklist span.glyphicon{
+    margin-left:20px;
+    color:#333;
+}
+#booklist .title-1 span{
+    color:#fff;
+}
+#booklist .title-1 a{
+    color:#fff;
+}
+#booklist .erji,#booklist .sanji{
+    display:none;
+    margin-top:0;
+}
+#booklist .erji.active{
+    display:block;
+}
+#booklist .sanji.active{
+    display:block;
+}
+#booklist .title-header .col-md-3{
+    border:0;
+}
+#booklist .yiji{
+    margin-top:0;
+}
+#booklist ul{
+    margin-bottom:5px;
+    /*border-bottom:1px solid #ddd;*/
+}
+#booklist .list-group{
+    padding-right:0;
+}
+#booklist .fenlei{
+    width:100%;
+    height:auto;
+}
+/*这是点击修改的页面*/
+.mask-booklist{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.mask-booklist .juzhong{
+    width:640px !important;
+    height:300px !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*background:#fff;*/
+
+}
+.mask-booklist .juzhong .container{
+    width:100%;
+    height:100%;
+}
+
+.mask-booklist .juzhong .container .bs-example{
+    width:100%;
+    height:auto;
+    margin-left:0;
+    margin-top:20px;
+    padding:20px 20px;
+    background:#fff;
+}
+.mask-booklist span.necessary{
+    color:red;
+    margin-right:5px;
+}
+/*添加分类的页面*/
+.mask-booklist-fenlei{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.mask-booklist-fenlei .juzhong{
+    width:640px !important;
+    height:300px !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*background:#fff;*/
+
+}
+.mask-booklist-fenlei .juzhong .container{
+    width:100%;
+    height:100%;
+}
+
+.mask-booklist-fenlei .juzhong .container .bs-example{
+    width:100%;
+    height:auto;
+    margin-left:0;
+    margin-top:20px;
+    padding:20px 20px;
+    background:#fff;
+}
+.mask-booklist-fenlei span.necessary{
+    color:red;
+    margin-right:5px;
+}
+/*添加二级子分类的页面*/
+.mask-booklist-erji{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.mask-booklist-erji .juzhong{
+    width:640px !important;
+    height:300px !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*background:#fff;*/
+
+}
+.mask-booklist-erji .juzhong .container{
+    width:100%;
+    height:100%;
+}
+
+.mask-booklist-erji .juzhong .container .bs-example{
+    width:100%;
+    height:auto;
+    margin-left:0;
+    margin-top:20px;
+    padding:20px 20px;
+    background:#fff;
+}
+.mask-booklist-erji span.necessary{
+    color:red;
+    margin-right:5px;
+}
+/*添加三级子分类的页面*/
+.mask-booklist-sanji{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.mask-booklist-sanji .juzhong{
+    width:640px !important;
+    height:300px !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*background:#fff;*/
+
+}
+.mask-booklist-sanji .juzhong .container{
+    width:100%;
+    height:100%;
+}
+
+.mask-booklist-sanji .juzhong .container .bs-example{
+    width:100%;
+    height:auto;
+    margin-left:0;
+    margin-top:20px;
+    padding:20px 20px;
+    background:#fff;
+}
+.mask-booklist-sanji span.necessary{
+    color:red;
+    margin-right:5px;
+}
+/*修改二级分类的页面*/
+.mask-erjichange{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.mask-erjichange .juzhong{
+    width:640px !important;
+    height:300px !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*background:#fff;*/
+
+}
+.mask-erjichange .juzhong .container{
+    width:100%;
+    height:100%;
+}
+
+.mask-erjichange .juzhong .container .bs-example{
+    width:100%;
+    height:auto;
+    margin-left:0;
+    margin-top:20px;
+    padding:20px 20px;
+    background:#fff;
+}
+.mask-erjichange span.necessary{
+    color:red;
+    margin-right:5px;
+}
+/*修改三级分类的页面*/
+.mask-sanjichange{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.mask-sanjichange .juzhong{
+    width:640px !important;
+    height:300px !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*background:#fff;*/
+
+}
+.mask-sanjichange .juzhong .container{
+    width:100%;
+    height:100%;
+}
+
+.mask-sanjichange .juzhong .container .bs-example{
+    width:100%;
+    height:auto;
+    margin-left:0;
+    margin-top:20px;
+    padding:20px 20px;
+    background:#fff;
+}
+.mask-sanjichange span.necessary{
+    color:red;
+    margin-right:5px;
+}

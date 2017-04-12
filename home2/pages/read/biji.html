@@ -1,0 +1,218 @@
+<div>
+        <div class="header">
+             <a href="#/read?id={{id}}" class="circle" ng-click="back()">
+
+             </a>
+             <div class="navbar">
+                <a href="#/catalog?id={{id}}" class="mulu">
+                    <!--<p>
+                        目录
+                    </p>
+                    <p>
+                        CATA
+                    </p>-->
+                </a>
+                <a href="#/shuqian?id={{id}}" class="mark">
+                    <!--<p>
+                        书签
+                    </p>
+                    <p>
+                        MARK
+                    </p> -->
+                </a>
+                <div class="mynote active">
+                    <!--<p>
+                        笔记
+                    </p>
+                    <p>
+                        NOTE
+                    </p> -->
+                </div>
+             </div>
+        </div>
+        
+        <div class="g-main">
+            <!--笔记 -->
+            <div class="g-node">
+                <div class="g-count">
+                    目前您有{{biji.length}}条读书笔记...
+                </div>
+                
+                <ul class="g-node-inner">
+                    <!--<li class="g-node-list bianji">
+                    &lt;!&ndash;<li class="g-node-list bianji" ng-repeat="v in biji">&ndash;&gt;
+                        <div class="g-node-list-left">
+                            <div class="g-node-list-icon"></div>
+                        </div>
+                        <div class="g-node-list-right">
+                            <div class="g-node-list-title">
+                                第一章  口吐莲花，会说话的聪明女人惹女人惹
+                            </div>
+                            <div class="g-node-list-inner">
+                                “不绝”之类的话，恐怕没有什么人会认为你真的是对他为你真的是对他
+                            </div>
+                            <div class="g-node-list-miaoshu">
+                                <div class="bi-icon"></div>
+                                <p>这里运用排比修辞手法形象生动的说明了了</p>
+                                <p>心情无比激动，看到睡不着！</p>
+                            </div>
+                            <div class="g-node-list-xinxi">
+                                <div class="g-node-list-xinxi-left">
+                                    <div class="biao">
+                                        <i class="icon"></i>
+                                        22.11
+                                    </div>
+                                    <div class="yan">
+                                        <i class="icon"></i>
+                                        12%
+                                    </div>
+                                </div>
+                                <div class="g-node-list-xinxi-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="g-node-list active">
+                        <div class="g-node-list-bj">
+                            <div class="cha"></div>
+                        </div>
+                        <div class="g-node-list-left">
+                            <div class="g-node-list-icon"></div>
+                        </div>
+                        <div class="g-node-list-right">
+                            <div class="g-node-list-title">
+                                第一章  口吐莲花，会说话的聪明女人惹女人惹
+                            </div>
+                            <div class="g-node-list-inner">
+                                “不绝”之类的话，恐怕没有什么人会认为你真的是对他为你真的是对他
+                            </div>
+                            <div class="g-node-list-miaoshu">
+                                <div class="bi-icon"></div>
+                                <p>这里运用排比修辞手法形象生动的说明了了</p>
+                                <p>心情无比激动，看到睡不着！</p>
+                            </div>
+                            <div class="g-node-list-xinxi">
+                                <div class="g-node-list-xinxi-left">
+                                    <div class="biao">
+                                        <i class="icon"></i>
+                                        22.11
+                                    </div>
+                                    <div class="yan">
+                                        <i class="icon"></i>
+                                        12%
+                                    </div>
+                                </div>
+                                <div class="g-node-list-xinxi-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="g-node-list">
+                        <div class="g-node-list-left">
+                            <div class="g-node-list-icon"></div>
+                        </div>
+                        <div class="g-node-list-right">
+                            <div class="g-node-list-title">
+                                第一章  口吐莲花，会说话的聪明女人惹女人惹
+                            </div>
+                            <div class="g-node-list-inner">
+                                “不绝”之类的话，恐怕没有什么人会认为你真的是对他为你真的是对他
+                            </div>
+                            <div class="g-node-list-miaoshu">
+                                <div class="bi-icon"></div>
+                                <p>这里运用排比修辞手法形象生动的说明了了</p>
+                                <p>心情无比激动，看到睡不着！</p>
+                            </div>
+                            <div class="g-node-list-xinxi">
+                                <div class="g-node-list-xinxi-left">
+                                    <div class="biao">
+                                        <i class="icon"></i>
+                                        22.11
+                                    </div>
+                                    <div class="yan">
+                                        <i class="icon"></i>
+                                        12%
+                                    </div>
+                                </div>
+                                <div class="g-node-list-xinxi-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </li>-->
+                    <li class="g-node-list" ng-repeat="v in biji">
+                        <div class="bigbox">
+                            <div class="g-node-list-left">
+                                <div class="g-node-list-icon"></div>
+                            </div>
+                            <div class="g-node-list-right">
+                                <div class="g-node-list-title">
+                                    {{v.vname}}
+                                </div>
+                                <div class="g-node-list-miaoshu">
+                                    <div class="bi-icon"></div>
+                                    <p>{{v.text}}</p>
+                                    <p>{{v.content}}</p>
+                                </div>
+                                <div class="g-node-list-xinxi">
+                                    <div class="g-node-list-xinxi-left">
+                                        <div class="biao">
+                                            <i class="icon"></i>
+                                            {{v.addtime}}
+                                        </div>
+                                    </div>
+                                    <div class="g-node-list-xinxi-right">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigbox2 active">
+                            <div class="g-node-list-bj">
+                                <div class="cha del" id="{{v.id}}" ng-click="shanchu()"></div>
+
+                            </div>
+                            <div class="g-node-list-left">
+                                <div class="g-node-list-icon"></div>
+                            </div>
+                            <div class="g-node-list-right">
+                                <div class="g-node-list-title">
+                                    {{v.vname}}
+                                </div>
+                                <div class="g-node-list-miaoshu">
+                                    <div class="bi-icon"></div>
+                                    <p>{{v.text}}</p>
+                                    <p>{{v.content}}</p>
+                                </div>
+                                <div class="g-node-list-xinxi">
+                                    <div class="g-node-list-xinxi-left">
+                                        <div class="biao">
+                                            <i class="icon"></i>
+                                            {{v.addtime}}
+                                        </div>
+                                    </div>
+                                    <div class="g-node-list-xinxi-right">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="g-chakan-quanbu">
+                    <div class="g-chakan-quanbu-in">查看全部</div>
+                </div>
+            </div>
+            <!--end-->
+            
+            <!--活动页面-->
+            
+        </div>
+        
+    </div>  

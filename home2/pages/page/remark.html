@@ -1,0 +1,146 @@
+<div>
+
+    <div id="sy-31">
+        <div id="header2">
+            <a href="" class="circle" id="fanhui" ng-click="dianji()" style="width: 0.5rem;height: 0.5rem;position: absolute;top: 0;bottom: 0;margin: auto;left: 0.2rem;right: auto;background: url(/book/home2/images/myinfo/b16.png) left center;background-size: 100%;"></a>
+        </div>
+        <div class="shu">
+            <div class="jianjie">
+                <div class="shu-img" style="background-image: url({{list.img}});background-repeat: no-repeat;background-size: contain;background-position:center center;"></div>
+                <div class="shu-jianj">
+                    <h3>{{list.title}}</h3>
+                    <span>FATE</span>
+                    <span>BOOK</span>
+                    <span>作者：{{list.author}}</span>
+                    <span>年代：{{list.year}}</span>
+                    <ul class="xing">
+                        <li ng-repeat=" v in list.xin track by $index"></li>
+                    </ul>
+                    <p>{{list.description}}</p>
+                    <ul class="leixing">
+                        <li>{{list.leibie1}}</li>
+                        <li>{{list.leibie2}}</li>
+                        <li>{{list.leibie3}}</li>
+                    </ul>
+                </div>
+                <div class="shujia">
+                    <div class="ml"><a href="#/catalog?id={{id}}">查看目录</a></div>
+                    <div class="sj" ng-click="addself(id,list.id)"><span>加入书架</span></div>
+                </div>
+                <div class="ljyd">
+                    <span></span>
+                    <a href="#/read?id={{id}}" style="color: #fff;">立即阅读</a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="shuping">
+            <div class="zxsp">
+                <div class="bi"></div>
+                <span>最新书评</span>
+                <span>the latest book review</span>
+            </div>
+            <ul class="pingl"  ng-if="!comment">
+                <li style="width:100%;height:1.55rem;line-height:1.55rem;text-align:center">暂无书评！</li>
+            </ul>
+            <ul class="pingl"  ng-if="comment">
+                <li ng-repeat="k in comment">
+                    <div class="touxing" style="background-image:url({{k.header}})"></div>
+                    <!--这个地方是头像-->
+                    <!--<div class="touxing" style="background-image:url({{k.pic}})"></div>-->
+                    <p>{{k.content}}</p>
+                    <div class="riqi">
+                        <div></div>
+                        <span>{{k.addtime}}</span>
+                    </div>
+                    <div class="zan">
+                        <div ng-click="clickzan(k.id,list.id)" id="{{k.id}}"></div>
+                        <!--点赞量-->
+                        <span>{{k.pnum}}</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="sp-ckqb">
+                <span></span>
+                <a href="#/remarks?id={{id}}">查看全部</a>
+                <span></span>
+            </div>
+        </div>
+        <!--书签-->
+        <div class="shuqian">
+            <div class="zxsp" ng-if="shuqian">
+                <div class="wdsq">
+                    <div class="sq"></div>
+                    <span>我的书签</span>
+                    <span>the latest book review</span>
+                </div>
+                <ul class="shuq">
+                    <li ng-repeat="j in shuqian">
+                        <div class="shuq-t"></div>
+                        <p>{{j.title}}</p>
+                        <p>{{j.contant}}</p>
+                        <div class="shijian">
+                            <div></div>
+                            <span>17:59</span>
+                        </div>
+                        <div class="yan">
+                            <div></div>
+                            <span>10%</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sq-ckqb">
+                    <span></span>
+                    <a href="#/schedual?id={{id}}">查看全部</a>
+                    <span></span>
+                </div>
+            </div>
+            <!--笔记-->
+
+            <div class="biji" ng-if="biji">
+                <div class="wdbj">
+                    <div class="bj"></div>
+                    <span>我的笔记</span>
+                    <span>the latest book review</span>
+                </div>
+                <ul class="bij">
+                    <li ng-repeat="g in biji">
+                        <div class="bij-t"></div>
+                        <p>{{g.neirong}}</p>
+                    </li>
+
+                </ul>
+                <div class="bj-ckqb">
+                    <span></span>
+                    <a href="#/notes?id={{id}}">查看全部</a>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="xiangsi" ng-if="xiangsi">
+                <div class="xssj">
+                    <div class="xs"></div>
+                    <span>相似书籍</span>
+                    <span>the latest book review</span>
+                </div>
+                <div class="huadong-box" lunbo>
+                    <div class="three-box">
+                        <div>
+                            <div class="float" ng-repeat='k in xiangsi track by $index'>
+                                <a href='#/remark?id={{k.id}}' class="picture"
+                                   style="background-image:url('{{k.img}}')"></a>
+                                <div class="bookname">{{k.username}}</div>
+                                <div class="Ename">{{k.categoryname}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="jiaru">{{suibian}}!</div>
+
+</div>

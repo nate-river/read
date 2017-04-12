@@ -1,0 +1,40 @@
+<div>
+
+		<div id="box2" style="background: #f2f2f2;">
+			<div id="header-book">
+				<div class="inner-box">
+					<a  href='' class="circle" id="circle" ng-click="circle()" style="width: 0.5rem;height: 0.5rem;position: absolute;top: 0;bottom: 0;margin: auto;left: 0.1rem;right: auto;background: url(/book/home2/images/myinfo/b16.png) left center;background-size: 100%;">
+
+					</a>
+				
+					<div  class="search-center">
+						<div class="soso iconsearch icon-search" id="soso"></div>
+						<input type="text" placeholder="搜索本地及网络书籍"/>
+					</div>
+				</div>
+			</div>
+			<div class="title-top-box2">
+				<div class="circle"></div>
+				<div class="zibox">
+					<div class="name">
+						热门搜索
+						<div class="three"></div>
+					</div>	
+				    <div class="nameE">HOT SEARCH</div>
+				</div>
+			</div>
+			<a class="content-box" ng-repeat="v in search" href="#/remark?search=search&id={{v.id}}&examp={{v.id}}" ng-if="xianshi">
+				<div class="picture" style="background-image:url({{v.img}})"></div>
+				<div class="dotted"></div>
+				<div class="right-content">
+					<h1>《{{v.name}}》</h1>
+					<div class="content-center">{{v.about}}</div>
+					<div class="chuban"><div></div>{{v.school}}</div>
+					<div class="pos"><div></div>{{v.address}}</div>
+				</div>
+			</a>
+			
+		</div>
+ 	
+ 
+</div>

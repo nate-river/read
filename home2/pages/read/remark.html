@@ -1,0 +1,164 @@
+<div>
+    
+        <div id="sy-31">
+            <div id="header2">
+                <div class="circle">
+                    <div class="icon"><a href="#/bookcity" class="icon-font icon-fanhuijian"></a></div>
+                </div>
+            </div>
+            <div class="shu">
+                <div class="jianjie">
+                    <div class="shu-img"></div>
+                    <div class="shu-jianj">
+                        <h3>{{list.title}}</h3>
+                        <span>FATE</span>
+                        <span>BOOK</span>
+                        <span>作者：{{list.author}}</span>
+                        <span>年代：{{list.year}}</span>
+                        <ul class="xing">
+                            <li ng-repeat=" v in star track by $index"></li>
+                        </ul>
+                        <p>{{list.description}}</p>
+                        <ul class="leixing">
+                            <li>{{list.leibie1}}</li>
+                            <li>{{list.leibie2}}</li>
+                            <li>{{list.leibie3}}</li>
+                        </ul>
+                    </div>
+                    <div class="shujia">
+                        <div class="ml"><a href="#/catalog?search={{search}}&id={{id}}&examp={{examp}}">查看目录</a></div>
+                        <div class="sj"><span>加入书架</span></div>
+                    </div>
+                    <div class="ljyd">
+                        <span></span>
+                        <a href="#/read?search={{search}}&id={{index}}&examp={{examp}}" style="color: #fff;">立即阅读</a>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="shuping">
+                <div class="zxsp">
+                    <div class="bi"></div>
+                    <span>最新书评</span>
+                    <span>the latest book review</span>
+                </div>
+                <ul class="pingl">
+                    <li ng-repeat="k in list.shuping">
+                        <div class="touxing"></div>
+                        <p>{{k.content}}</p>
+                        <div class="riqi">
+                            <div></div>
+                            <!--日期-->
+                            <!--<span>{{k.addtime}}</span>-->
+                        </div>
+                        <div class="zan">
+                            <div></div>
+                            <!--点赞量-->
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sp-ckqb">
+                    <span></span>
+                    <a href="#/remarks?search={{search}}&id={{index}}&examp={{examp}}">查看全部</a>
+                    <span></span>
+                </div>
+            </div>
+            <!--书签-->
+            <div class="shuqian">
+                <div class="wdsq">
+                    <div class="sq"></div>
+                    <span>我的书签</span>
+                    <span>the latest book review</span>
+                </div>
+                <ul class="shuq">
+                    <li ng-repeat="j in list.shuqian">
+                        <div class="shuq-t"></div>
+                        <p>{{j.title}}</p>
+                        <p>{{j.contant}}</p>
+                        <div class="shijian">
+                            <div></div>
+                            <span>17:59</span>
+                        </div>
+                        <div class="yan">
+                            <div></div>
+                            <span>10%</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sq-ckqb">
+                    <span></span>
+                    <a href="#/schedual?search={{search}}&id={{id}}&examp={{examp}}">查看全部</a>
+                    <span></span>
+                </div>
+            </div>
+            <!--笔记-->
+            
+            <div class="biji">
+                <div class="wdbj">
+                    <div class="bj"></div>
+                    <span>我的笔记</span>
+                    <span>the latest book review</span>
+                </div>
+                <ul class="bij">
+                    <li ng-repeat="g in list.biji">
+                        <div class="bij-t"></div>
+                        <p>{{g.neirong}}</p>
+                    </li>
+
+                </ul>
+                <div class="bj-ckqb">
+                    <span></span>
+                    <a href="#/notes?search={{search}}&id={{id}}&examp={{examp}}">查看全部</a>
+                    <span></span>
+                </div>
+            </div>
+            
+            
+            <div class="xiangsi">
+                <div class="xssj">
+                    <div class="xs"></div>
+                    <span>相似书籍</span>
+                    <span>the latest book review</span>
+                </div>
+               <!-- <ul class="xiangs">
+                    <li ng-repeat="v in same">
+                        <div class="xiangs-s1">
+                            <a href="#/remark?search=jing&id={{index}}&examp={{v.id}}"class="xiangs-t"></a>
+                            <span>{{v[0].title}}</span>
+                            <span>Haruki murakami</span>
+                        </div>
+                        <div class="xiangs-s2">
+                            <div class="xiangs-t"></div>
+                            <span>村上春树·猫</span>
+                            <span>Haruki murakami</span>
+                        </div>
+                        <div class="xiangs-s3">
+                            <div class="xiangs-t"></div>
+                            <span>村上春树·猫</span>
+                            <span>Haruki murakami</span>
+                        </div>
+                    </li>
+                </ul>-->
+                <div class="huadong-box" lunbo>
+                    <div class="three-box">
+                        <div >
+                            <div class="float" ng-repeat='k in list.xiangshishuji track by $index'>
+                                <a href='#/remark?search=jing&id={{k.id}}&examp={{k.id}}' class="picture" style="background-image:url('{{k.img}}')"></a>
+                                <div class="bookname">{{k.username}}</div>
+                                <div class="Ename">{{k.categoryname}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  <ul class="xs-list">
+                      <li class="bjs"></li>
+                      <li></li>
+                      <li></li>
+                  </ul>-->
+            </div>
+        </div>
+
+
+</div>

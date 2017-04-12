@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img{
+    border: none;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+
+html{
+   font-size: 100px; 
+}
+body{
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+
+$screen-list:320px,360px,375px,384px,412px,414px,768px,800px,1024px;
+$design-width: 750px;
+
+@each $w in $screen-list{
+    @media only screen and (min-width:#{($w)} ) {
+        html{
+            font-size:100px*$w/$design-width;
+        }        
+    }
+}
+
+//混合宏
+@mixin top-bottom{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin left-right{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@mixin wh($a,$b){
+    width:$a;
+    height:$b;
+}
+
+
+
+

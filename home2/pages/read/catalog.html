@@ -1,0 +1,30 @@
+<div>
+
+    <div id="w-40">
+        <div class="header">
+            <a href="#/read?id={{id}}" class="circle" ng-click="back()" style="width: 0.5rem;height: 0.5rem;position: absolute;top: 0;bottom: 0;margin: auto;left: 0.2rem;right: auto;background: url(/book/home2/images/myinfo/b16.png) left center;background-size: 100%;"></a>
+            <div class="navbar">
+                <div class="mulu active"></div>
+                <a href="#/shuqian?id={{id}}" class="mark"></a>
+                <a href="#/biji?id={{id}}" class="mynote"></a>
+            </div>
+        </div>
+        <ul class="g-cata">
+            <li class="g-cata-list active" ng-repeat="k in catalog" id="{{$index}}">
+                <a href="#/read?id={{id}}&ids={{$index}}">
+                    <div class="g-cata-list-left">
+                        <span>正文</span>
+                        <span>{{k.title}}</span>
+                        <span>{{k.mulu}}</span>
+                    </div>
+                    <div class="g-cata-list-right">
+                        <span class="yixiazai"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!--书签-->
+
+    </div>
+
+</div>

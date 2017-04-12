@@ -1,0 +1,57 @@
+<div>
+    <div id="sy-35">
+        <div id="header2">
+            <a href="#/remark?id={{id}}" class="circle" id="fanhui" ng-click="dianji()" style="width: 0.5rem;height: 0.5rem;position: absolute;top: 0;bottom: 0;margin: auto;left: 0.2rem;right: auto;background: url(/book/home2/images/myinfo/b16.png) left center;background-size: 100%;"></a>
+            <div class="sqgl">
+                <span>书签管理</span>
+                <span>Bookmark Manager</span>
+            </div>
+        </div>
+
+        <div class="shuqian">
+            <ul class="shuq">
+                <li ng-repeat="v in schedual" id="{{v.id}}">
+                    <div class="shuq-t"></div>
+                    <p>{{v.vidname}}</p>
+                    <p>{{v.content}}</p>
+                    <div class="shijian">
+                        <div></div>
+                        <!--时间-->
+                        <span>{{v.data}}</span>
+                    </div>
+                    <div class="yan">
+                        <div></div>
+                        <!--进度-->
+                        <span>{{v.jindu}}</span>
+                    </div>
+                </li>
+                <!-- <li>
+                   <div class="shuq-t"></div>
+                   <p>第一章  口吐莲花，会说话的聪明女人惹</p>
+                   <p>例如，当你见到一位相貌平平的先生，却偏要…</p>
+                   <div class="shijian">
+                     <div></div>
+                     <span>17:59</span>
+                   </div>
+                   <div class="yan">
+                     <div></div>
+                     <span>10%</span>
+                   </div>
+                 </li>
+                 <li>
+                   <div class="shuq-t"></div>
+                   <p>第一章  口吐莲花，会说话的聪明女人惹</p>
+                   <p>例如，当你见到一位相貌平平的先生，却偏要…</p>
+                   <div class="shijian">
+                     <div></div>
+                     <span>17:59</span>
+                   </div>
+                   <div class="yan">
+                     <div></div>
+                     <span>10%</span>
+                   </div>
+                 </li>-->
+            </ul>
+        </div>
+    </div>
+</div>

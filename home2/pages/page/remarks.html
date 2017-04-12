@@ -1,0 +1,36 @@
+<div>
+    <div id="sy-33">
+        <div id="header2">
+            <a href="#/remark?id={{id}}" class="circle" id="fanhui" ng-click="dianji()" style="width: 0.5rem;height: 0.5rem;position: absolute;top: 0;bottom: 0;margin: auto;left: 0.2rem;right: auto;background: url(/book/home2/images/myinfo/b16.png) left center;background-size: 100%;"></a>
+            <div class="qbsp">
+                <span>全部书评</span>
+                <span>All the books</span>
+            </div>
+        </div>
+        <div class="shuping">
+            <ul class="pingl">
+                <li ng-repeat="v in shuping track by $index">
+                    <div class="touxing"  style="background-image:url({{v.header}})"></div>
+                    <p>{{v.content}}</p>
+                    <div class="riqi">
+                        <div></div>
+                        <!--时间-->
+                        <span>{{v.addtime}}</span>
+                    </div>
+                    <div class="zan">
+                        <div ng-click="clickzan(v.id)"></div>
+                        <!--点赞量-->
+                        <span>{{v.zan}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fabupinglun">
+            <div class="fb">
+                <span></span>
+                <a href="#/issue?id={{id}}" id="pinglun">发布评论</a>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,450 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'iconshaixuan';
+    src: url('/book/home2/css/iconfont8.woff');
+}
+
+.iconshaixuan {
+    font-family: 'iconshaixuan' !important;
+    font-size: 0.4rem;
+}
+
+.icon-shaixuan:before {
+    content: "\e75d";
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+* {
+    font-family: "苹方", "微软雅黑";
+}
+
+/* @font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot");
+  src: url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.woff") format("woff"), url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.ttf") format("truetype"), url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.svg#iconfont") format("svg"); }
+ */
+#box3 {
+    width: 100%;
+    height: 15rem;
+}
+
+/*header*/
+#header-book {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+}
+
+#header-book .inner-box {
+    width: 7.02rem;
+    height: 0.88rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#header-book .inner-box .circle, #header-book .inner-box .circle2 {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    color: #4bb4e2;
+    line-height: 0.5rem;
+}
+
+#header-book .inner-box .circle {
+    left: 0;
+}
+
+#header-book .inner-box .circle2 {
+    right: 0;
+    line-height: 0.6rem;
+}
+
+#header-book .inner-box .search-center {
+    width: 5.6rem;
+    height: 0.54rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("/book/home2/images/12.png");
+    background-size: cover;
+    box-shadow: 0 0 0.1rem #2391d1;
+}
+
+#header-book .inner-box .search-center input {
+    position: absolute;
+    left: 0.64rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: none;
+    outline: none;
+    background: #f6f6f6;
+    color: #838383;
+    font-size: 0.22rem;
+}
+
+/*header*/
+.title-top-box {
+    width: 100%;
+    height: 3.75rem;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: 0.28rem;
+}
+
+.title-top-box .picture {
+    width: 2.46rem;
+    height: 3.49rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.25rem;
+    /*background-image: url("/book/home2/images/13.png");*/
+    background-size: cover;
+}
+
+.title-top-box .right-box {
+    height: 3.49rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 3.05rem;
+    right: 0.34rem;
+}
+
+.title-top-box .right-box h1 {
+    height: 0.47rem;
+    text-align: left;
+    line-height: 0.67rem;
+    color: #333;
+    font-size: 0.28rem;
+}
+
+.title-top-box .right-box h2 {
+    height: 0.4rem;
+    text-align: left;
+    line-height: 0.4rem;
+    color: #999;
+    font-size: 0.16rem;
+}
+
+.title-top-box .right-box h3 {
+    text-align: left;
+    line-height: 0.3rem;
+    color: #666;
+    font-size: 0.22rem;
+}
+
+.title-top-box .right-box .bottom-box-left {
+    position: absolute;
+    left: 0;
+    bottom: 0.18rem;
+}
+
+.title-top-box .right-box .bottom-box-left p {
+    text-align: left;
+    line-height: 0.3rem;
+    color: #bdbdbd;
+    font-size: 0.18rem;
+}
+
+.title-top-box .right-box .bottom-box-left .xi-box {
+    padding-top: 0.18rem;
+}
+
+.title-top-box .right-box .bottom-box-left .xi-box .xi {
+    float: left;
+    width: 0.28rem;
+    height: 0.23rem;
+    background-image: url("/book/home2/images/xi1.png");
+    background-size: cover;
+}
+
+.title-top-box .right-box .bottom-box-left .xi-box .xi.xi2 {
+    background-image: url("/book/home2/images/xi2.png");
+}
+
+.title-top-box .right-box .bottom-box-left .xi-box .xi:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.title-top-box .right-box .bottom-box-right {
+    position: absolute;
+    right: 0;
+    bottom: 0.18rem;
+    width: 1.75rem;
+    height: 0.54rem;
+    background-image: url("/book/home2/images/14.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.title-top-box .right-box .bottom-box-right .wenzi {
+    display: block;
+    width: 100%;
+    height: 0.54rem;
+    color: #fff;
+    font-size: 0.18rem;
+    text-align: center;
+    line-height: 0.54rem;
+}
+
+.title-top-box .right-box .bottom-box-right .circleL, .title-top-box .right-box .bottom-box-right .circleR {
+    width: 0.06rem;
+    height: 0.06rem;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.title-top-box .right-box .bottom-box-right .circleL {
+    left: 0.08rem;
+}
+
+.title-top-box .right-box .bottom-box-right .circleR {
+    right: 0.08rem;
+}
+
+#zhao-bookshelf {
+    position: absolute !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    top: 0.88rem !important;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#zhao-bookshelf .type-box {
+    width: 100%;
+    height: 4.18rem;
+}
+
+#zhao-bookshelf .type-box .options {
+    width: 100%;
+    height: 1.15rem;
+    background: #fff;
+    box-shadow: 0 0.1rem 10rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box {
+    width: 5.84rem;
+    height: 0.86rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("/book/home2/images/15.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe, #zhao-bookshelf .type-box .options .sorts-box .time {
+    width: 2.41rem;
+    height: 0.68rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe .zi, #zhao-bookshelf .type-box .options .sorts-box .time .zi {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe .zi h1, #zhao-bookshelf .type-box .options .sorts-box .time .zi h1 {
+    padding-top: 0.14rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 0.3rem;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe .zi h2, #zhao-bookshelf .type-box .options .sorts-box .time .zi h2 {
+    text-align: center;
+    font-size: 0.14rem;
+    color: #bddbe8;
+    line-height: 0.12rem;
+    font-variant: small-caps;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe .backg, #zhao-bookshelf .type-box .options .sorts-box .time .backg {
+    width: 2.41rem;
+    height: 0.68rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("/book/home2/images/16.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe .none, #zhao-bookshelf .type-box .options .sorts-box .time .none {
+    display: none;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .zonghe {
+    left: 0.08rem;
+}
+
+#zhao-bookshelf .type-box .options .sorts-box .time {
+    right: 0.08rem;
+}
+
+#zhao-bookshelf .type-box .all-sort-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    top: 1.15rem;
+    background: #fff;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+#zhao-bookshelf .type-box .all-sort-box .name {
+    width: 1.75rem;
+    height: 0.44rem;
+    margin: 0.18rem 0 0.18rem 0.53rem;
+    border: 0.01rem solid #2a3441;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.44rem;
+    font-size: 0.24rem;
+    float: left;
+}
+
+#zhao-bookshelf .type-box .all-sort-box .name.change {
+    border: none;
+    background: #29a6dc;
+    color: #fff;
+}
+
+#bigbox {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}

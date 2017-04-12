@@ -1,0 +1,844 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#sy-35 {
+    width: 100%;
+    height: auto;
+}
+
+#sy-35 #header2 {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+    overflow: hidden;
+}
+
+#sy-35 #header2 .circle, #sy-35 #header2 .circle2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.28rem;
+    left: 0.23rem;
+}
+
+#sy-35 #header2 .circle .icon, #sy-35 #header2 .circle2 .icon {
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #3daedf;
+}
+
+#sy-35 #header2 .circle a, #sy-35 #header2 .circle2 a {
+    color: #3daedf;
+}
+
+#sy-35 #header2 .sqgl {
+    width: 2rem;
+    height: 0.65rem;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 0.1rem;
+}
+
+#sy-35 #header2 .sqgl span:nth-of-type(1) {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+}
+
+#sy-35 #header2 .sqgl span:nth-of-type(2) {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+#sy-35 .shuqian {
+    width: 7.5rem;
+    margin-top: 0.6rem;
+    margin: 0 auto;
+}
+
+#sy-35 .shuqian .shuq {
+    width: 100%;
+}
+
+#sy-35 .shuqian .shuq li {
+    width: 100%;
+    height: 1.4rem;
+    margin-top: 0.1rem;
+    border-bottom: 1px dashed #151C2B;
+}
+
+#sy-35 .shuqian .shuq li .shuq-t {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/shuqian.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#sy-35 .shuqian .shuq li p:nth-of-type(1) {
+    width: 5.1rem;
+    float: left;
+    font-size: 14px;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+#sy-35 .shuqian .shuq li p:nth-of-type(2) {
+    width: 5.1rem;
+    float: left;
+    font-size: 12px;
+    margin-left: 0.3rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#sy-35 .shuqian .shuq li .shijian {
+    width: 2rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-35 .shuqian .shuq li .shijian div {
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/riqi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top:-0.1rem;
+}
+
+#sy-35 .shuqian .shuq li .shijian span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-35 .shuqian .shuq li .yan {
+    width: 1.5rem;
+    float: right;
+    margin-left: 1.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-35 .shuqian .shuq li .yan div {
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/yan.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-35 .shuqian .shuq li .yan span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs {
+    width: 100%;
+    height: 1.4rem;
+    margin-top: -1px;
+    border-bottom: 2px solid #28DD8B;
+    border-top: 2px solid #28DD8B;
+    color: #fff;
+}
+
+
+#sy-35 .shuqian .shuq .shuqs span {
+    color: #fff;
+}
+
+#sy-35 .shuqian .shuq .shuqs .xs {
+    display: none;
+}
+
+#sy-35 .shuqian .shuq .shuqs .shq-s {
+    width: 6.6rem;
+    height: 1.3rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/sq-bj.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-35 .shuqian .shuq .shuqs .sc {
+    width: 0.8rem;
+    height: 100%;
+    float: right;
+    margin-right: 0.1rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs .sc span {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 1px solid #28DD8B;
+    color: #28DD8B;
+    font-size: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs p:nth-of-type(1) {
+    width: 5.1rem;
+    float: left;
+    font-size: 14px;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs p:nth-of-type(2) {
+    width: 5.1rem;
+    float: left;
+    font-size: 12px;
+    margin-left: 0.3rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs .shijian {
+    width: 2rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs .shijian div {
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/riqis.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-35 .shuqian .shuq .shuqs .shijian span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs .yan {
+    width: 1.5rem;
+    float: right;
+    margin-left: 1.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-35 .shuqian .shuq .shuqs .yan div {
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/yans.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-35 .shuqian .shuq .shuqs .yan span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-36 {
+    width: 100%;
+    height: auto;
+}
+
+#sy-36 #header2 {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+    overflow: hidden;
+}
+
+#sy-36 #header2 .circle, #sy-36 #header2 .circle2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #fff;
+    border: 0.02rem solid #0d76c3;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.28rem;
+    left: 0.23rem;
+}
+
+#sy-36 #header2 .circle .icon, #sy-36 #header2 .circle2 .icon {
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #3daedf;
+}
+
+#sy-36 #header2 .circle a, #sy-36 #header2 .circle2 a {
+    color: #3daedf;
+}
+
+#sy-36 #header2 .sqgl {
+    width: 2rem;
+    height: 0.65rem;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 0.1rem;
+}
+
+#sy-36 #header2 .sqgl span:nth-of-type(1) {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+}
+
+#sy-36 #header2 .sqgl span:nth-of-type(2) {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+#sy-36 .bj-shu {
+    width: 100%;
+    height: 0.5rem;
+    background: #e5e5e5;
+    color: #a8a8a8;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+#sy-36 .biji {
+    width: 100%;
+    margin-top: 0.6rem;
+    margin: 0 auto;
+}
+
+#sy-36 .biji .bij {
+    width: 100%;
+}
+
+#sy-36 .biji .bij li {
+    width: 100%;
+    height: 2.3rem;
+    margin-top: 0.1rem;
+    border-bottom: 1px dashed #151C2B;
+}
+
+#sy-36 .biji .bij li .shuq-t {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/biji.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#sy-36 .biji .bij li p:nth-of-type(1) {
+    width: 5.1rem;
+    float: left;
+    font-size: 14px;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+#sy-36 .biji .bij li p:nth-of-type(2) {
+    width: 5.1rem;
+    float: left;
+    font-size: 12px;
+    margin-left: 0.3rem;
+}
+
+#sy-36 .biji .bij li .bianji {
+    width: 5.35rem;
+    height: 0.9rem;
+    float: left;
+    margin-left: 0.3rem;
+    background-image: url("/book/home2/images/bookpage/bianji.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-36 .biji .bij li .bianji p:nth-of-type(1) {
+    display: block;
+    width: 4.5rem;
+    font-size: 12px;
+    float: right;
+    margin-right: 0.3rem;
+}
+
+#sy-36 .biji .bij li .bianji p:nth-of-type(2) {
+    display: block;
+    width: 4.5rem;
+    font-size: 12px;
+    float: right;
+    margin-right: 0.3rem;
+}
+
+#sy-36 .biji .bij li .shijian {
+    width: 1.3rem;
+    float: left;
+    margin-left: 1.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-36 .biji .bij li .shijian div {
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/riqi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-36 .biji .bij li .shijian span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-36 .biji .bij li .yan {
+    width: 1.5rem;
+    float: left;
+    margin-left: 0rem;
+    margin-top: 0.08rem;
+}
+
+#sy-36 .biji .bij li .yan div {
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/yan.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-36 .biji .bij li .yan span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-36 .biji .bij .shuqs {
+    width: 100%;
+    height: 2.24rem;
+    margin-top: -1px;
+    border-bottom: 2px solid #28DD8B;
+    border-top: 2px solid #28DD8B;
+}
+
+#sy-36 .biji .bij .shuqs .xs {
+    display: none;
+}
+
+#sy-36 .biji .bij .shuqs .shq-s {
+    width: 6.4rem;
+    height: 2.24rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/bj-bj.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-36 .biji .bij .shuqs .sc {
+    width: 0.7rem;
+    height: 100%;
+    float: right;
+    margin-right: 0.1rem;
+}
+
+#sy-36 .biji .bij .shuqs .sc span {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 1px solid #28DD8B;
+    color: #28DD8B;
+    font-size: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.3rem;
+    margin-top: 0.9rem;
+}
+
+#sy-36 .biji .bij .shuqs p{
+    color:#fff;
+}
+
+#sy-36 .biji .bij .shuqs p:nth-of-type(1) {
+    width: 5.1rem;
+    float: left;
+    font-size: 14px;
+    margin-left: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+#sy-36 .biji .bij .shuqs p:nth-of-type(2) {
+    width: 5.1rem;
+    float: left;
+    font-size: 12px;
+    margin-left: 1.2rem;
+}
+
+
+#sy-36 .biji .bij .shuqs .bianji {
+    width: 5.35rem;
+    height: 0.9rem;
+    float: left;
+    margin-left: 1rem;
+    background-image: url("/book/home2/images/bookpage/bianjis.png");
+}
+
+#sy-36 .biji .bij .shuqs .bianji p{
+    color: #0F0F0F;
+}
+
+#sy-36 .biji .bij .shuqs .shijian {
+    width: 1.3rem;
+    float: left;
+    margin-left: 1.1rem;
+    margin-top: 0.08rem;
+}
+
+#sy-36 .biji .bij .shuqs .shijian div {
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/riqis.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-36 .biji .bij .shuqs .shijian span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+    color: #fff;
+}
+
+#sy-36 .biji .bij .shuqs .yan {
+    width: 1.5rem;
+    float: left;
+    margin-left: 0rem;
+    margin-top: 0.08rem;
+}
+
+#sy-36 .biji .bij .shuqs .yan div {
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/yans.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-36 .biji .bij .shuqs .yan span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+    color:#fff;
+}
+
+/* @font-face {
+    font-family: "iconfont";
+    src: url("iconfont.eot?t=1479450372436");
+    IE9
+    src: url("iconfont.eot?t=1479450372436#iefix") format("embedded-opentype"), url("iconfont.woff?t=1479450372436") format("woff"), url("iconfont.ttf?t=1479450372436") format("truetype"), url("iconfont.svg?t=1479450372436#iconfont") format("svg");
+    iOS 4.1-
+} */
+
+/* .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+.icon-shezhi:before {
+    content: "\e604";
+}
+
+.icon-icon:before {
+    content: "\e603";
+}
+
+.icon-60:before {
+    content: "\e647";
+}
+
+.icon-duihao:before {
+    content: "\e601";
+}
+
+.icon-bofangqibofang:before {
+    content: "\e610";
+}
+
+.icon-bofangqizanting:before {
+    content: "\e617";
+}
+
+.icon-bofangqibofang1:before {
+    content: "\e602";
+}
+
+.icon-yinliang:before {
+    content: "\e629";
+}
+
+.icon-p-menus:before {
+    content: "\e670";
+}
+
+.icon-xiaoyuhao:before {
+    content: "\e6e4";
+}
+
+.icon-iconfontdaohanggonggao:before {
+    content: "\e62e";
+}
+
+.icon-xiazai:before {
+    content: "\e62f";
+}
+
+.icon-hanbaobao:before {
+    content: "\e648";
+}
+
+.icon-zhongguoliantong:before {
+    content: "\e600";
+}
+
+.icon-cha:before {
+    content: "\e67d";
+}
+
+.icon-shangyiqu101:before {
+    content: "\e6e1";
+}
+
+.icon-suijibofang01:before {
+    content: "\e6e2";
+}
+
+.icon-xiayiqu101:before {
+    content: "\e718";
+}
+
+.icon-biaoqian:before {
+    content: "\e6f8";
+}
+
+.icon-mulu:before {
+    content: "\e712";
+}
+
+.icon-yueliang:before {
+    content: "\e642";
+}
+
+.icon-canoe_slalom:before {
+    content: "\e77c";
+}
+
+.biaoqian {
+    position: absolute;
+    top: 0.35rem;
+    right: 1rem;
+    color: white;
+    font-size: 0.28rem;
+}
+
+#main {
+    width: 100%;
+    height: 11.96rem;
+    background: #ffe9b0;
+}
+
+#end {
+    width: 100%;
+    height: 2.25rem;
+    background: #151c2b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#end .syz, #end .xyz {
+    width: 1rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #c6c6c6;
+}
+
+#end .syz {
+    left: .3rem;
+}
+
+#end .xyz {
+    right: .3rem;
+}
+
+#end .jindu {
+    width: 4.67rem;
+    height: .12rem;
+    background: #d5d5d5;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0.46rem;
+    left: 1.42rem;
+}
+
+#end .jindu .yuan {
+    width: .24rem;
+    height: .24rem;
+    background: url("/book/home2/img/w-39/yuna.jpg") 0 0 no-repeat;
+    position: absolute;
+    left: .5rem;
+    top: 0;
+}
+
+#end .circles1, #end .circles2, #end .circles3 {
+    width: 0.57rem;
+    height: 0.57rem;
+    background: #29a6dc;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.54rem;
+}
+
+#end .circles1 .icons, #end .circles2 .icons, #end .circles3 .icons {
+    line-height: 0.57rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #fff;
+}
+
+#end .circles1 {
+    left: 1.18rem;
+}
+
+#end .circles2 {
+    left: 3.45rem;
+}
+
+#end .circles3 {
+    right: 1.18rem;
+}

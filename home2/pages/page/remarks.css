@@ -1,0 +1,325 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'icon-font';
+    src: url('/book/home2/css/iconfont1.woff');
+}
+
+.icon-font {
+    font-family: 'icon-font' !important;
+}
+
+/*.icon-fanhuijian:before {
+    content: "\e604";
+}*/
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+#sy-33 {
+    width: 100%;
+    height: auto;
+}
+
+#sy-33 #header2 {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+    overflow: hidden;
+}
+
+#sy-33 #header2 .circle, #sy-33 #header2 .circle2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.28rem;
+    left: 0.23rem;
+}
+
+#sy-33 #header2 .circle .icon, #sy-33 #header2 .circle2 .icon {
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #3daedf;
+}
+
+#sy-33 #header2 .circle a, #sy-33 #header2 .circle2 a {
+    color: #3daedf;
+}
+
+#sy-33 #header2 .qbsp {
+    width: 1.6rem;
+    height: 0.65rem;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 0.1rem;
+}
+
+#sy-33 #header2 .qbsp span:nth-of-type(1) {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+}
+
+#sy-33 #header2 .qbsp span:nth-of-type(2) {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+#sy-33 .shuping {
+    width: 6.87rem;
+    margin-top: 0.6rem;
+    margin: 0 auto;
+}
+
+#sy-33 .shuping .pingl {
+    width: 100%;
+}
+
+#sy-33 .shuping .pingl li {
+    width: 100%;
+    height: 1.55rem;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 0.1rem;
+}
+
+#sy-33 .shuping .pingl li .touxing {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    float: left;
+    background-image: url(/book/home2/images/bookpage/t1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#sy-33 .shuping .pingl li p {
+    width: 5.1rem;
+    height: 0.8rem;
+    float: left;
+    font-size: 14px;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    border-bottom: 1px dotted #151C2B;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+#sy-33 .shuping .pingl li .riqi {
+    width: auto;
+    float: left;
+    margin-left: 1.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-33 .shuping .pingl li .riqi div {
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/riqi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-33 .shuping .pingl li .riqi span {
+    width: auto;
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-33 .shuping .pingl li .zan {
+    width: 1.5rem;
+    float: right;
+    margin-left: 0.2rem;
+    margin-top: 0.08rem;
+}
+
+#sy-33 .shuping .pingl li .zan div {
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    background-image: url("/book/home2/images/bookpage/zan.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sy-33 .shuping .pingl li .zan span {
+    font-size: 12px;
+    float: left;
+    line-height: 0.45rem;
+    margin-left: 0.1rem;
+}
+
+#sy-33 .shuping .sp-ckqb {
+    width: 2.2rem;
+    height: 0.4rem;
+    background: #29a6dc;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 0.4rem;
+}
+
+#sy-33 .shuping .sp-ckqb span:nth-of-type(1) {
+    float: left;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+    margin-top: 0.15rem;
+}
+
+#sy-33 .shuping .sp-ckqb span:nth-of-type(2) {
+    float: right;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+    margin-top: 0.15rem;
+}
+
+#sy-33 .fabupinglun {
+    width: 100%;
+    height: 1.25rem;
+    background: #151C2B;
+    position: fixed;
+    bottom: 0;
+}
+
+#sy-33 .fabupinglun div {
+    width: 1.6rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    background: #f4f4f4;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
+#sy-33 .fabupinglun div span:nth-of-type(1) {
+    float: left;
+    width: 0.1rem;
+    height: 0.1rem;
+    background: #c4c4c4;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.2rem;
+}
+
+#sy-33 .fabupinglun div span:nth-of-type(2) {
+    float: right;
+    width: 0.1rem;
+    height: 0.1rem;
+    background: #c4c4c4;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+    margin-top: 0.2rem;
+}
+
+#pinglun {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}

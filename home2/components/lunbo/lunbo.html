@@ -1,0 +1,58 @@
+<div>
+	<style>
+	.wrapper{
+		width:100%;
+		height:4.84rem;
+		overflow: hidden;
+	}
+	.wrapper .chang{
+		width:9999px;
+		height: 100%;
+		transition: all 1s;
+	}
+	.wrapper .chang .img{
+		height: 4.84rem;
+		float:left;
+	}
+	.wrapper .img img{
+		height: 100%;
+		width:7.5rem;
+		overflow: hidden;
+	}
+	.dian{
+		height: 0.08rem;
+		padding-top:0.14rem;
+		text-align: center;
+		position: relative;
+	}
+	.dian ul{
+		position: absolute;
+		left: 46%;
+		top:50%;
+	}
+	.dian li{
+		float:left;
+		list-style: none;
+		width:0.08rem;
+		height: 0.08rem;
+		border-radius: 50%;
+		margin-left: 0.08rem;
+		border: 0.01rem solid #0090ff;
+	}
+	.dian li.active{
+		background: #0090ff;
+	}
+	</style>
+		<div class="wrapper">
+			<div class="chang">
+				<a href="#/remark?id={{v.id}}" index="{{$index}}" data-id="ids" class="img" ng-repeat="v in pics track by $index">
+					<img src="{{v.img}}"/>
+				</a>
+			</div>
+		</div>
+		<div ng-if="hasDian" class='dian'>
+			<ul>
+				<li ng-repeat='v in pics track by $index' ng-class='{active:0==$index}'></li>
+			</ul>
+		</div>
+</div>

@@ -1,0 +1,87 @@
+<div>
+
+<!--公共部分-->
+<common></common>
+<!--右侧部分-->
+<div id="right">
+	<!--独自部分-->
+	<div id="user">
+		<ol class="breadcrumb breadcrumb1">
+			<li class="active"><a href="#/user">用户信息</a></li>
+			<!--<li><a href="#">Library</a></li>
+            <li class="active">Data</li>-->
+		</ol>
+		<div class="col-md-12">
+			<ol class="breadcrumb">
+				<li class="active"><a href="#/user" ng-click="pldel()">批量删除</a></li>
+				<li class="active"><a href="javascript:;" ng-click="alldel()">全部删除</a></li>
+			</ol>
+			<div class="bs-example4 user-list" data-example-id="contextual-table">
+				<table class="table table-bordered">
+					<thead>
+					<tr class="active">
+						<th><input type="checkbox" class="checkbox" id="checkbox" ng-click="check()"></th>
+						<th>用户id</th>
+						<th>用户名</th>
+						<th>账号</th>
+						<th>用户类型</th>
+						<th>注册时间</th>
+						<th>联系方式</th>
+						<th>操作</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr class="" ng-repeat="v in userlist">
+						<th scope="row" class="fuxuan">
+							<input type="checkbox" class="checkbox checkbox1" ng-click="fuxuan()" id="{{v.id}}">
+						</th>
+						<td>{{v.id}}</td>
+						<td>{{v.nickname}}</td>
+						<td>{{v.accout}}</td>
+						<td>{{v.gradename}}</td>
+						<td>{{v.addtime}}</td>
+						<td>{{v.tel}}</td>
+						<td class="caozuo">
+							<span class="glyphicon glyphicon-pencil" ng-click="xiugai(v.id)"></span>
+							<span class="glyphicon glyphicon-remove" ng-click="shanchu(v.id)"></span>
+						</td>
+					</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!--点击修改的时候出来的界面-->
+	<div class="mask" ng-show="isShow">
+		<div class="juzhong">
+			<div class="container">
+				<div class="bs-example list-group" >
+					<form class="form-horizontal" role="form"  >
+						<div class="form-group">
+							<label  class="col-sm-2 control-label"><span class="necessary">*</span>用户名</label>
+							<div class="col-sm-10">
+								<input   type="text " class="form-control "  id="input-name" value="{{cur.nickname}}" >
+							</div>
+						</div>
+						<div class="form-group">
+							<label  class="col-sm-2 control-label"><span class="necessary">*</span>用户类型</label>
+							<div class="col-sm-10">
+								<input type="text " class="form-control " id="input-type" placeholder="请输入榜单名称" value="{{cur.gradename}}" >
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary " id="quxiao" ng-click="quxiao()" >&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+						
+								<button type="submit" class="btn btn-primary " id="xiugai-done" ng-click="done(cur.id)" >&nbsp;&nbsp;完成&nbsp;&nbsp;</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

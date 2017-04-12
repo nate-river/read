@@ -1,0 +1,105 @@
+a{
+    color:#27B7FA;
+}
+
+#common {
+
+}
+
+#common .navbar-default {
+    border-bottom: 1px solid #ccc;
+    /*background-image:url("../images/03.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;*/
+    /*background:#29a6dc;*/
+    /*background: #3F3F3F;*/
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    height: 70px;
+    overflow: hidden;
+    background: url(../images/bg.jpg) no-repeat 0 -1000px;
+}
+
+#common .navbar-default .navbar-brand{
+    color:#fff;
+}
+
+#common .container-fluid a.pull-right {
+    font-size: 14px;
+}
+
+#common .navbar-inverse {
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#common .left {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    /*background-color: #2a3441;*/
+    background-color:#404040;
+}
+
+#common .nav>li>a:hover, .nav>li>a:focus{
+    background: #2db7f5;
+    color:#fff;
+}
+
+#common .nav-second-level {
+    height: 0;
+    overflow: hidden;
+}
+
+#common .slide-second {
+    height: auto;
+}
+
+#common #side-menu {
+    margin-top: 30px;
+}
+
+#common #side-menu li.one {
+    border-bottom: 1px solid rgba(204, 204, 204, .5);
+}
+
+#common #side-menu li.one i{
+    margin-right:20px;
+}
+
+#common #side-menu li.one a {
+    color: #fff;
+}
+
+#common #side-menu li.one:hover a {
+    color: #000;
+}
+
+#common #side-menu li.one:active a {
+    color: #000;
+}
+
+#common #side-menu li.one:visited a {
+    color: #000;
+}
+
+#common #side-menu li.one span.pull-right {
+    margin-top: 3px;
+}
+
+/*
+#common #side-menu li.separator{
+    width:90%;
+    margin-left:15px;
+    border-bottom: 1px dashed #fff;
+}*/
+#common .left .nav i{
+    margin-left:20px;
+    margin-right:30px;
+}

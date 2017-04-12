@@ -1,0 +1,456 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: "苹方";
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.register-2 {
+    background: #F2F2F2;
+    height: 100%;
+}
+
+.register-2 .register-top {
+    width: 100%;
+    height: auto;
+}
+
+.register-2 .register-top .register-nav {
+    width: 100%;
+    height: 0.88rem;
+    background: #29a6dc;
+}
+
+.register-2 .register-top .register-nav .login-fanhui {
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("/book/home2/images/login/nav-fanhui.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0.25rem;
+}
+
+.register-2 .register-top .register-nav .login-title {
+    width: 6rem;
+    height: 0.88rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.36rem;
+    color: #f2f2f2;
+    line-height: 0.88rem;
+    left: 0.69rem;
+    text-align: center;
+}
+
+.register-2 .register-top .register-nav-bot {
+    width: 100%;
+    height: 1.67rem;
+    background: #2BA6DC;
+    position: relative;
+}
+
+.register-2 .register-top .register-nav-bot .register-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.43rem;
+    color: #fff;
+}
+
+.register-2 .register-bot {
+    width: 100%;
+    height: auto;
+    padding: 0 0.67rem;
+    background: #F2F2F2;
+    padding-top: 0.59rem;
+}
+
+.register-2 .register-bot .register-form {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.register-2 .register-bot .register-form .register-alert {
+    width: 4.5rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 50%;
+    margin-top: -0.75rem;
+    left: 50%;
+    margin-left: -2.25rem;
+    font-size: 0.28rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.register-2 .register-bot .register-form .register-user, .register-2 .register-bot .register-form .register-password, .register-2 .register-bot .register-form .register-phone {
+    width: 100%;
+    height: 0.88rem;
+    border-radius: 0.5rem;
+    border: 1px solid #3D91FD;
+    margin-bottom: 0.38rem;
+    background: #fff;
+}
+
+.register-2 .register-bot .register-form .register-user div:nth-child(1), .register-2 .register-bot .register-form .register-password div:nth-child(1), .register-2 .register-bot .register-form .register-phone div:nth-child(1) {
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.45rem;
+}
+
+.register-2 .register-bot .register-form .register-user input, .register-2 .register-bot .register-form .register-password input, .register-2 .register-bot .register-form .register-phone input {
+    width: 4.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 1.23rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.28rem;
+    line-height: 0.88rem;
+    color: #333;
+    z-index: 20;
+}
+
+.register-2 .register-bot .register-form .register-user .tishi, .register-2 .register-bot .register-form .register-password .tishi, .register-2 .register-bot .register-form .register-phone .tishi {
+    width: 4.5rem;
+    height: 0.28rem;
+    font-size: 0.28rem;
+    color: #999;
+    line-height: 0.28rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 1.23rem;
+    z-index: 10;
+}
+
+.register-2 .register-bot .register-form .register-user .u-img {
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("/book/home2/images/login/login-user1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.register-2 .register-bot .register-form .register-password .p-img {
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("/book/home2/images/login/login-pass1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.register-2 .register-bot .register-form .register-phone .ph-img {
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("/book/home2/images/login/register-phone.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.register-2 .register-bot .register-form .register-verify {
+    width: 100%;
+    height: 0.88rem;
+    margin-bottom: 0.24rem;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-send, .register-2 .register-bot .register-form .register-verify .register-code {
+    border-radius: 0.5rem;
+    border: 1px solid #3D91FD;
+    background: #fff;
+    position: absolute;
+    top: 0;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-send {
+    width: 3.84rem;
+    height: 0.88rem;
+    left: 0;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-send h3, .register-2 .register-bot .register-form .register-verify .register-send h4 {
+    text-align: center;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-send h3 {
+    font-size: 0.28rem;
+    color: #3abffd;
+    line-height: 0.28rem;
+    margin-top: 0.22rem;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-send h4 {
+    font-size: 0.24rem;
+    color: #d7d7d7;
+    line-height: 0.24rem;
+    margin-top: 0.02rem;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-code {
+    width: 2.08rem;
+    height: 0.88rem;
+    right: 0;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-code .tishi {
+    width: 2.08rem;
+    height: 0.88rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #999;
+    line-height: 0.88rem;
+    z-index: 10;
+}
+
+.register-2 .register-bot .register-form .register-verify .register-code input {
+    width: 1.38rem;
+    height: 0.88rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.88rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 20;
+}
+
+.register-2 .register-bot .register-form .register-fs {
+    width: 100%;
+    height: 0.25rem;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-find, .register-2 .register-bot .register-form .register-fs .register-sign {
+    display: inline-block;
+    width: 1.76rem;
+    height: 100%;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-find div:nth-child(1), .register-2 .register-bot .register-form .register-fs .register-sign div:nth-child(1) {
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-find a, .register-2 .register-bot .register-form .register-fs .register-sign a {
+    display: inline-block;
+    width: auto;
+    height: 0.25rem;
+    font-size: 0.22rem;
+    color: #666;
+    line-height: 0.26rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.5rem;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-find {
+    position: absolute;
+    left: 0.44rem;
+    top: 0;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-find div {
+    background-image: url("/book/home2/images/login/login-mima.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-sign {
+    position: absolute;
+    right: 0rem;
+    top: 0;
+}
+
+.register-2 .register-bot .register-form .register-fs .register-sign div {
+    background-image: url("/book/home2/images/login/login-zhuce.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.register-2 .register-bot .register-form .register-button {
+    margin-top: 0.84rem;
+    width: 100%;
+    height: 0.68rem;
+}
+
+.register-2 .register-bot .register-form .register-button .register-btn {
+    width: 5.64rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50px;
+    background: #3DBFFD;
+    z-index: 10;
+}
+
+.register-2 .register-bot .register-form .register-button .register-btn .l-circle {
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 20;
+}
+
+.register-2 .register-bot .register-form .register-button .register-btn .l-circle:nth-of-type(1) {
+    left: 0.32rem;
+}
+
+.register-2 .register-bot .register-form .register-button .register-btn .l-circle:nth-of-type(2) {
+    right: 0.32rem;
+}
+
+.register-2 .register-bot .register-form .register-button .register-btn .rightNow {
+    display: block;
+    width: 4.96rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.68rem;
+}
+
+.register-2 .login-dis {
+    display: none;
+}

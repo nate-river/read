@@ -1,0 +1,158 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  border: none; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  font-family: "苹方"; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px; } }
+
+body {
+  background: #FAFAFA;
+  font-family: "苹方";
+  color: #666; }
+
+#my-24 #head {
+  width: 100%;
+  height: 1rem;
+  background: #29a6dc; }
+  #my-24 #head .circle {
+    width: 0.44rem;
+    height: 0.44rem;
+    background: #fff;
+    box-sizing: border-box;
+    border: 0.02rem solid #0b6ebf;
+    border-radius: 50%;
+    left: 0.24rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+    #my-24 #head .circle .icon {
+      display: block;
+      line-height: 0.4rem;
+      text-align: center;
+      font-size: 0.3rem;
+      color: #3daedf; }
+  #my-24 #head .biaoti_box {
+    width: 3.56rem;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; }
+    #my-24 #head .biaoti_box .dazi {
+      color: #fafafa;
+      font-size: 0.36rem;
+      text-align: center;
+      margin-top: 0.08rem; }
+    #my-24 #head .biaoti_box .gang {
+      width: 0.35rem;
+      height: 0.04rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: url("/book/home2/images/myinfo/gang.png") no-repeat;
+      background-size: 0.35rem,0.04rem; }
+    #my-24 #head .biaoti_box .xiaozi {
+      color: #90dcff;
+      font-size: 0.2rem;
+      text-align: center;
+      margin-top: 0.05rem; }
+
+#my-24 #contain {
+  width: 7.28rem;
+  height: 7.61rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 12px;
+  background: url("/book/home2/images/myinfo/banben1.png") no-repeat;
+  background-size: 7.28rem,7.61rem; }
+  #my-24 #contain .heng {
+    width: 100%;
+    height: 0.1rem;
+    background: #d5d5d5;
+    border-radius: 3px;
+    z-index: -3; }
+  #my-24 #contain .zi_box {
+    width: 100%;
+    height: 0.7rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.14rem; }
+    #my-24 #contain .zi_box .xinxi {
+      font-size: 0.3rem;
+      color: #333333;
+      display: block; }
+    #my-24 #contain .zi_box .ver {
+      font-size: 0.16rem;
+      color: #666666;
+      display: block; }
+  #my-24 #contain .neirong_box {
+    width: 5.64rem;
+    height: 5.76rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 1.33rem; }
+    #my-24 #contain .neirong_box p {
+      font-size: 0.22rem;
+      margin-bottom: 0.5rem; }

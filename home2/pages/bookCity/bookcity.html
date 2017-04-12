@@ -1,0 +1,147 @@
+<div>
+    <!--<style>
+        #banner{
+            width:100%;
+            height:4.84rem;
+            overflow: hidden;
+        }
+        #banner .swiper-wrapper{
+            height:100%;
+        }
+        #banner .swiper-wrapper .swiper-slide{
+            height:100%;
+        }
+        #banner .swiper-wrapper .swiper-slide img{
+            width:100%;
+            height:100%;
+        }
+    </style>-->
+    <div id="lc-body">
+        <div id="lc-head">
+            <booktab drops='lc-main'
+                     pics="[{de:'/book/home2/images/bookcity/selected0.jpg',hi:'/book/home2/images/bookcity/selected1.jpg'},{de:'/book/home2/images/bookcity/list0.jpg',hi:'/book/home2/images/bookcity/list1.jpg'},{de:'/book/home2/images/bookcity/classify0.jpg',hi:'/book/home2/images/bookcity/classify1.jpg'}]"
+                     class="lc-nav"></booktab>
+            <div class="search">
+                <a href="#/search"></a>
+            </div>
+        </div>
+        <!--精选内容-->
+        <div class="lc-main active">
+            <!--pics="newarr" ids="newarr2" -->
+            <!--轮播-->
+            <lunbo  pics="newarr" time="2000" has-dian='true'></lunbo>
+            <!--底部内容-->
+            <div id="lc-newbook">
+                <div class="title"></div>
+                <div class="content">
+                    <ul>
+                        <li class="lis" ng-repeat="v in jing">
+                            <a href="#/remark?id={{v.id}}" ng-click="get($index)">
+                                <div class="imgs"><img ng-src="{{v.img}}" alt=""/></div>
+                                <div class="mes">
+                                    <p class="name">{{v.title}}</p>
+                                    <p class="aur">{{v.author}}</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--榜单内容-->
+        <div class="lc-main">
+            <ul style="margin-bottom:1rem;">
+                <li class="list" ng-repeat="v in bang">
+                    <a class="masks" href="#/bangdan?id={{v.id}}&examp={{index}}" ng-click="get($index)">
+                        <div class="xinbox1">
+                            <div class="xinbox11">
+                                <div class="xinbox11-1">{{v.name}}•阅读榜单</div>
+                                <div class="xinbox11-2">{{v.words}}</div>
+                                <div class="xinbox11-3">
+                                    <div class="xinbox11-31">
+
+                                    </div>
+                                </div>
+                                <div class="xinbox11-4">
+                                    {{v.description}}
+                                </div>
+                            </div>
+                            <div class="xinbox12">
+                                <div class="xinbox12-1">
+                                    <div class="xinbox12-11"></div>
+                                    <div class="xinbox12-12">
+                                        {{v.top2}}
+                                    </div>
+                                </div>
+                                <div class="xinbox12-2">
+                                    <div class="xinbox12-21"></div>
+                                    <div class="xinbox12-22">
+                                        {{v.top1}}
+                                    </div>
+                                </div>
+                                <div class="xinbox12-3">
+                                    <div class="xinbox12-31"></div>
+                                    <div class="xinbox12-32">
+                                        {{v.top3}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--分类内容-->
+        <div class="lc-main">
+            <div class="bookclass" ng-repeat="k in lei track by $index">
+                <div class="atit">
+                    <span>{{k.name}}</span>
+                </div>
+                <div class="main" ng-repeat="m in k.erji track by $index">
+                    <span>·{{m.name}}</span>
+                    <ul class='libox'>
+                        <li class="lis" ng-repeat="n in m.sanji track by $index"><a href="#/fenlei?name={{n.name}}&id={{n.id}}&examp={{n.id}}">{{n.name}}</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--这是底部的-->
+        <div class="fixed">
+            <div class="type">
+                <div class="contain">
+                    <div class="picture" style="background: url('/book/home2/images/bookcase/shujia1.png') center center no-repeat;background-size:0.4rem;">
+
+                    </div>
+                    <div class="name">
+                        <!--<a href="">书架</a>-->
+                        <a href="#/book" style="color: #67686a;">书架</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="type  type2">
+                <div class="xian"></div>
+                <div class="contain">
+                    <div class="picture change" style="background: url('/book/home2/images/bookcity/bookcity.png') center center no-repeat;background-size:0.4rem;">
+
+                    </div>
+                    <div class="name">
+                        <a href="#/" style="color: #FFFFFF;"  ng-click="book()">书城</a>
+                    </div>
+                </div>
+            </div>
+            <div class="type">
+                <div class="xian"></div>
+                <div class="contain">
+                    <div class="picture change only" style="background: url('/book/home2/images/my/my1.png') center center no-repeat;background-size:0.4rem;">
+                    </div>
+                    <div class="name">
+                        <a href="#/Myinfo" style="color: #67686a;">我的</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

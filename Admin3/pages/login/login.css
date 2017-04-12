@@ -1,0 +1,35 @@
+body{
+    font-family: "微软雅黑";
+    background-color:rgba(0,0,0,.8);
+    background:url("/book/Admin3/images/bg.jpg") center center no-repeat;
+    background-size:cover;
+}
+h3{
+    margin-top:66px;
+    margin-bottom:66px;
+    color:#fff;
+}
+.button{
+    display:block;
+    overflow:hidden;
+}
+.button button.btn{
+    float:right;
+    background-image: linear-gradient(to bottom,#29a5db 0,#29a5db 100%);
+    background-color:#29a5db;
+    color:#fff;
+}
+.button button.btn-primary:hover{
+    background-image: linear-gradient(to bottom,#29a5db 0,#29a5db 100%);
+    color:#fff;
+}
+.list-group-item{
+    border-color: transparent;
+    background: url("/book/Admin3/images/tmbg-white.png") center center repeat;
+}
+.list-group-item.active{
+    background-image: linear-gradient(to bottom,#29a5db 0,#29a5db 100%);
+}
+.list-group-item .input-group span{
+    background-color: transparent;
+}

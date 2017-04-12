@@ -1,0 +1,133 @@
+<div>
+    
+        <div id="box3" boxthree>
+            <div id="header-book">
+                <div class="inner-box">
+                 <a  href='#/search' class="circle  iconfanhui icon-leftarrow" >
+                        <!--&#xe66f;-->
+                    </a>
+                   <!--  <a  href='#/search' class="circle">
+                        &#xe66f;
+                    </a> -->
+                    <!--<div class="search-center" search>
+                        <input type="text" />
+                    </div>-->
+                    <div  class="search-center">
+                        <div class="soso iconsearch icon-search" id="soso"></div>
+                        <input type="text" />
+                    </div>
+                    <div class="circle2 iconshaixuan icon-shaixuan">
+                        <!--&#xe60d;-->
+                    </div>
+                </div>
+            </div>
+            <div class="bigbox" id="bigbox">
+
+                <div class="title-top-box" ng-repeat="v in qingqiu" >
+                    <div class="picture"></div>
+                    <div class="right-box">
+                        <h1>《{{v.title}}》</h1>
+                        <h2><!--FASHION DESIGN-->fashion design</h2>
+                        <h3>
+                            {{v.jianjie}}
+                        </h3>
+                        <div class="bottom-box-left">
+                            <p>作者：{{v.author}}</p>
+                            <p>字数：{{v.zishu}}</p>
+                            <div class="xi-box">
+                                 <div class="xi"></div>
+                                 <div class="xi"></div>
+                                 <div class="xi"></div>
+                                 <div class="xi"></div>
+                                 <div class="xi xi2"></div>
+                            </div>
+                        </div>
+                        <div class="bottom-box-right">
+                            <div class="circleL"></div>
+                            <a href="#/remark?search=choose&id={{v.id}}&examp={{v.id}}" class="wenzi">点这里查看</a>
+                            <div class="circleR"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--本地的-->
+                 <div class="title-top-box">
+               <div class="picture"></div>
+               <div class="right-box">
+                   <h1>《服装设计学》</h1>
+                   <h2><!--FASHION DESIGN-->fashion design</h2>
+                   <h3>
+                       本书着重阐述了服装设计的基本原理与
+                       技术，包括服装的造型设计原理、服装
+                       设计的创作思维、服装设计面料与色彩
+                       以及各类服装的设计技...
+                   </h3>
+                   <div class="bottom-box-left">
+                       <p>作者：袁仄</p>
+                       <p>字数：6.83万字</p>
+                       <div class="xi-box">
+                            <div class="xi"></div>
+                            <div class="xi"></div>
+                            <div class="xi"></div>
+                            <div class="xi"></div>
+                            <div class="xi xi2"></div>
+                       </div>
+                   </div>
+                   <div class="bottom-box-right">
+                       <div class="circleL"></div>
+                       <a href="#/remark" class="wenzi">点这里查看</a>
+                       <div class="circleR"></div>
+                   </div>
+               </div>
+           </div>
+            </div>
+
+
+        
+        
+        <div id="zhao-bookshelf">
+            <div class="type-box">
+                <div class="options">
+                    <div class="sorts-box">
+                        <div class="zonghe two">
+                             <div class="backg"></div>
+                             <div class="zi">
+                                <h1>综合排序</h1>
+                                <h2>system information</h2>
+                             </div>
+                        </div>
+                        <div class="time two">
+                             <div class="backg none"></div>
+                             <div class="zi">
+                                <h1>时间排序</h1>
+                                <h2>my information</h2>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- <div class="all-sort-box">
+                    <div class="name change" id="quanbu" >全部</div>
+                    <div class="name xuanzi" >文艺</div>
+                    <div class="name xuanzi">短片精品</div>
+                    <div class="name xuanzi">经管/励志</div>
+                    <div class="name xuanzi">现代言情</div>
+                    <div class="name xuanzi">生活</div>
+                    <div class="name xuanzi">现代都市</div>
+                    <div class="name xuanzi">青春校园</div>
+                    <div class="name xuanzi">教育</div>
+                </div>-->
+                <div class="all-sort-box" >
+                    <div class="name change" id="quanbu" >全部</div>
+                    <div class="name xuanzi" ng-repeat="v in lei" id="{{v.id}}">{{v.name}}</div>
+                    <!--<div class="name xuanzi" >文艺</div>
+                    <div class="name xuanzi">短片精品</div>
+                    <div class="name xuanzi">经管/励志</div>
+                    <div class="name xuanzi">现代言情</div>
+                    <div class="name xuanzi">生活</div>
+                    <div class="name xuanzi">现代都市</div>
+                    <div class="name xuanzi">青春校园</div>
+                    <div class="name xuanzi">教育</div>-->
+                </div>
+            </div>
+        </div>  
+</div>
+</div>

@@ -1,0 +1,358 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  border: none; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  font-family: "苹方"; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px; } }
+
+body {
+  background: #fafafa; }
+
+.messageS-21 {
+  background: #F2F2F2;
+  height: 100%; }
+  .messageS-21 .messageS-top {
+    width: 100%;
+    height: auto; }
+    .messageS-21 .messageS-top .messageS-nav {
+      width: 100%;
+      height: 1rem;
+      background: #29a6dc; }
+      .messageS-21 .messageS-top .messageS-nav .login-fanhui {
+        display: block;
+        width: 0.44rem;
+        height: 0.44rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url("/book/home2/images/login/nav-fanhui.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 0.25rem; }
+      .messageS-21 .messageS-top .messageS-nav .login-title {
+        width: 6rem;
+        height: 1rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0.69rem;
+        text-align: center; }
+        .messageS-21 .messageS-top .messageS-nav .login-title .one {
+          width: 6rem;
+          height: 0.36rem;
+          font-size: 0.36rem;
+          color: #f2f2f2;
+          line-height: 0.36rem;
+          text-align: center;
+          margin-top: 0.19rem; }
+        .messageS-21 .messageS-top .messageS-nav .login-title .two {
+          width: 0.35rem;
+          height: 0.04rem;
+          background-image: url("/book/home2/images/login/nav-line.png");
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-left: 2.84rem;
+          margin-top: 0.04rem; }
+        .messageS-21 .messageS-top .messageS-nav .login-title .thr {
+          width: 6rem;
+          height: 0.2rem;
+          font-size: 0.2rem;
+          color: #90dcff;
+          line-height: 0.2rem;
+          text-align: center;
+          margin-top: 0.09rem;
+          font-family: 'Myriad Pro'; }
+  .messageS-21 .messageS-bot {
+    width: 100%;
+    height: auto;
+    padding: 0 0.24rem; }
+    .messageS-21 .messageS-bot .messageS-sel {
+      width: 100%;
+      height: 1.13rem; }
+      .messageS-21 .messageS-bot .messageS-sel .messageS-select {
+        width: 5.17rem;
+        height: 0.84rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0.16rem;
+        background: #2a3441;
+        border-radius: 0.5rem; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right {
+          width: 2.4rem;
+          height: 0.69rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          border-radius: 0.5rem;
+          background: #29a6dc;
+          border: 2px solid #fff; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left .mS-circle, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right .mS-circle {
+            width: 0.03rem;
+            height: 0.03rem;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: 0.27rem; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left .mS-circle.one, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right .mS-circle.one {
+            left: 0.54rem; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left .mS-circle.two, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right .mS-circle.two {
+            left: 0.60rem; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left .mS-circle.thr, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right .mS-circle.thr {
+            right: 0.54rem; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left .mS-circle.four, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right .mS-circle.four {
+            right: 0.60rem; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left {
+          left: 0.08rem; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right {
+          right: 0.08rem; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-line {
+          width: 0.03rem;
+          height: 0.59rem;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background-image: url("/book/home2/images/login/mS-line.png");
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: contain; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left-font, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right-font {
+          width: 2.4rem;
+          height: 0.69rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          border-radius: 0.5rem; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left-font h2, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left-font h4, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right-font h2, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right-font h4 {
+            text-align: center; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left-font h2, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right-font h2 {
+            font-size: 0.24rem;
+            color: #fafafa;
+            line-height: 0.24rem;
+            margin-top: 0.16rem; }
+          .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left-font h4, .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right-font h4 {
+            font-size: 0.14rem;
+            color: #bddbe8;
+            line-height: 0.14rem;
+            margin-top: 0.04rem;
+            font-weight: normal;
+            font-family: 'Myriad Pro';
+            font-variant: small-caps; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-left-font {
+          left: 0.08rem; }
+        .messageS-21 .messageS-bot .messageS-sel .messageS-select .mS-right-font {
+          right: 0.08rem; }
+    .messageS-21 .messageS-bot .messageS-con {
+      width: 100%;
+      height: auto;
+      min-height: 6.17rem;
+      box-shadow: 0 0 0.12rem rgba(160, 160, 160, 0.75);
+      border-radius: 0.1rem;
+      padding-bottom: 0.16rem;
+      background: #fff; }
+      .messageS-21 .messageS-bot .messageS-con .mS-list {
+        width: 100%;
+        height: auto; }
+        .messageS-21 .messageS-bot .messageS-con .mS-list li {
+          width: 100%;
+          height: 0.91rem;
+          border-bottom: 1px dotted #999; }
+          .messageS-21 .messageS-bot .messageS-con .mS-list li .mS-list-img {
+            width: 0.32rem;
+            height: 0.32rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-image: url("/book/home2/images/login/mS-list-img.png");
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 0.15rem; }
+          .messageS-21 .messageS-bot .messageS-con .mS-list li .mS-list-title {
+            width: 5.46rem;
+            height: 100%;
+            position: absolute;
+            left: 0.66rem; }
+            .messageS-21 .messageS-bot .messageS-con .mS-list li .mS-list-title h2 {
+              font-size: 0.28rem;
+              color: #333;
+              line-height: 0.28rem;
+              margin-top: 0.16rem; }
+            .messageS-21 .messageS-bot .messageS-con .mS-list li .mS-list-title h4 {
+              font-size: 0.16rem;
+              color: #999;
+              line-height: 0.16rem;
+              margin-top: 0.08rem;
+              font-family: 'Myriad Pro';
+              font-variant: small-caps;
+              font-weight: normal; }
+          .messageS-21 .messageS-bot .messageS-con .mS-list li .mS-list-more {
+            width: 0.09rem;
+            height: 0.17rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-image: url("/book/home2/images/login/mS-arrow.png");
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: 0.32rem; }
+    .messageS-21 .messageS-bot .messageM-con {
+      width: 7.02rem;
+      height: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      min-height: 6.17rem;
+      box-shadow: 0 0 0.12rem rgba(160, 160, 160, 0.75);
+      border-radius: 0.1rem;
+      padding-bottom: 0.16rem;
+      position: absolute;
+      top: 1.13rem;
+      background: #fff; }
+      .messageS-21 .messageS-bot .messageM-con .mM-list {
+        width: 100%;
+        height: auto; }
+        .messageS-21 .messageS-bot .messageM-con .mM-list li {
+          width: 100%;
+          height: 1.14rem;
+          border-bottom: 1px dotted #999; }
+          .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-img {
+            width: 0.66rem;
+            height: 0.66rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-image: url("/book/home2/images/login/mM-list-img.png");
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 0.18rem; }
+          .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-name {
+            width: 4.8rem;
+            height: 100%;
+            position: absolute;
+            left: 1.01rem; }
+            .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-name h2 {
+              font-size: 0.28rem;
+              color: #333;
+              line-height: 0.28rem;
+              margin-top: 0.16rem; }
+            .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-name h4 {
+              font-size: 0.16rem;
+              color: #999;
+              line-height: 0.16rem;
+              margin-top: 0.08rem;
+              font-family: 'Myriad Pro';
+              font-variant: small-caps;
+              font-weight: normal; }
+            .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-name .mM-list-con {
+              width: 100%;
+              height: auto;
+              font-size: 0.16rem;
+              color: #666;
+              line-height: 0.16rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin-top: 0.1rem;
+              padding: 0.04rem 0; }
+          .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-more {
+            width: 1.4rem;
+            height: 0.16rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0;
+            top: 0.37rem; }
+            .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-more .mM-list-moreImg {
+              display: inline-block;
+              width: 0.16rem;
+              height: 0.16rem;
+              background-image: url("/book/home2/images/login/mM-list-time.png");
+              background-position: 0 0;
+              background-repeat: no-repeat;
+              background-size: contain; }
+            .messageS-21 .messageS-bot .messageM-con .mM-list li .mM-list-more .mM-list-date {
+              display: inline-block;
+              width: auto;
+              height: 0.16rem;
+              font-size: 0.16rem;
+              color: #666;
+              line-height: 0.16rem;
+              white-space: nowrap;
+              font-family: 'Myriad Pro';
+              position: absolute;
+              left: 0.2rem; }
+        .messageS-21 .messageS-bot .messageM-con .mM-list li:nth-last-child(1) {
+          border-bottom: none; }
+  .messageS-21 .messagse-dis {
+    display: none; }

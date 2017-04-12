@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+/* @font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1479437360923");
+  IE9
+  src: url("iconfont.eot?t=1479437360923#iefix") format("embedded-opentype"), url("iconfont.woff?t=1479437360923") format("woff"), url("iconfont.ttf?t=1479437360923") format("truetype"), url("iconfont.svg?t=1479437360923#iconfont") format("svg");
+  iOS 4.1- }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+ */
+.icon-shezhi:before {
+    content: "\e600";
+}
+
+.icon-youxiang:before {
+    content: "\e624";
+}
+
+.icon-shuchengcebianlan:before {
+    content: "\e635";
+}
+
+.icon-arrowleft:before {
+    content: "\e603";
+}
+
+.icon-wo:before {
+    content: "\e60f";
+}
+
+.icon-icon03:before {
+    content: "\e606";
+}
+
+.icon-xiaohuojian:before {
+    content: "\e627";
+}
+
+.icon-dengdai:before {
+    content: "\e618";
+}
+
+.icon-naozhong:before {
+    content: "\e62e";
+}
+
+.icon-iconfontdian1:before {
+    content: "\e669";
+}
+
+.icon-dengdai1:before {
+    content: "\e614";
+}
+
+.icon-xin:before {
+    content: "\e665";
+}
+
+.icon-fankui:before {
+    content: "\e656";
+}
+
+.icon-shujia:before {
+    content: "\e634";
+}
+
+.icon-jianchagengxin:before {
+    content: "\e698";
+}
+
+.icon-yijianfankui:before {
+    content: "\e626";
+}
+
+.icon-hengxian:before {
+    content: "\e74a";
+}
+
+.icon-yuedu:before {
+    content: "\e9b4";
+}
+
+#header {
+    width: 100%;
+    height: 1rem;
+    background: #29a6dc;
+    display: none;
+    z-index: 9999999999999;
+
+}
+
+#header .circle, #header .circle2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #fff;
+    /*border: 0.02rem solid #0d76c3;*/
+    border-radius: 50%;
+    position: absolute;
+    top: 0.28rem;
+}
+
+#header .circle .icon, #header .circle2 .icon {
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 0.1rem;
+    color: #3daedf;
+}
+
+#header .circle {
+    left: 0.46rem;
+    background:#fff url("/book/home2/images/bookpage/back.jpg") center center no-repeat;
+    background-size:0.15rem;
+}
+
+#header .circle2 {
+    right: 0.46rem;
+}
+
+#header2 {
+    width: 100%;
+    height: 1.76rem;
+    background: #29a6dc;
+}
+
+#header2 .circle, #header2 .circle2 {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.56rem;
+}
+
+#header2 .circle .icon, #header2 .circle2 .icon {
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #3daedf;
+}
+
+#header2 .circle {
+    left: 0.46rem;
+}
+
+#header2 .circle2 {
+    right: 0.46rem;
+}

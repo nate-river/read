@@ -1,0 +1,94 @@
+<div style="height: auto;">
+    <div id="bookshelf">
+        <div id="header-bookshelf">
+            <div class="inner-box">
+                <div class="search-center">
+                    <div class='title'>我的书架</div>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class='titleE'>MY BOOKSHELF</div>
+                </div>
+                <a href='#/search' class="circle2">
+
+                </a>
+            </div>
+        </div>
+        <div id="box1">
+            <!--banner-->
+            <div class="banner" banner>
+                <div id="dg-container" class="dg-container">
+                    <a href="#/remark?id={{v.books_id}}" class="dg-wrapper" ng-repeat="v in banner"></a>
+                    <ol class="button" id="lightButton">
+                        <li class="first"></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+            </div>
+            <!--最新阅读-->
+            <div class="title-top-box1">
+                <div class="circle"></div>
+                <div class="zibox">
+                    <div class="name">
+                        最新阅读
+                        <div class="three"></div>
+                    </div>
+                    <div class="nameE">RECENTLY READ</div>
+                </div>
+            </div>
+            <div ng-repeat="v in shujia track by $index" ng-if="v.name=='newRead'">
+                <div class="content-box1 newread" ng-repeat="k in v.books track by $index">
+                    <a class="picture" style="background-image: url('{{k.picture}}')" href="#/remark?id={{k.id}}"></a>
+                    <div class="right-box">
+                        <h1>{{k.name}}</h1>
+                        <p>{{k.en}}</p>
+                        <div class="dotted"></div>
+                        <h2>{{k.title1}}</h2>
+                        <p>{{k.title2}}</p>
+                        <!--<span class="span_1">已读</span><span class="span_2">{{k.jingdu}}</span>
+                        <div class="readpercent">
+                            <div class="percent" style="width: {{k.jingdu}};height: 0.06rem;background: #94d1e6;"></div>
+                        </div>-->
+                        <a href="#/read?id={{k.id}}" class="read">继续阅读</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--底部-->
+        <div class="fixed">
+            <div class="type type2">
+                <div class="contain">
+                    <div class="picture icon icon-shujia1" style="background: url('/book/home2/images/bookcase/shujia.png') center center no-repeat;background-size:0.4rem;">
+                    </div>
+                    <div class="name">
+                        <a href="#/book" style="color: #67686a;">书架</a>
+                    </div>
+                </div>
+            </div>
+            <div class="type">
+                <div class="xian"></div>
+                <div class="contain">
+                    <div class="picture change iconff icon-shu" style="background: url('/book/home2/images/bookcity/bookcity1.png') center center no-repeat;background-size:0.4rem;">
+                    </div>
+                    <div class="name">
+                        <a href="#/" style="color: #67686a;">书城</a>
+                    </div>
+                </div>
+            </div>
+            <div class="type">
+                <div class="xian"></div>
+                <div class="contain">
+                    <div class="picture change only iconr icon-ren-copy" style="background: url('/book/home2/images/my/my1.png') center center no-repeat;background-size:0.4rem;">
+                    </div>
+                    <div class="name">
+                        <a href="#/Myinfo" style="color: #67686a;">我的</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

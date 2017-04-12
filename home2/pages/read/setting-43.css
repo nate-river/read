@@ -1,0 +1,648 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+#s-43 {
+    width: 100%;
+    height: 4rem;
+    background: #151c2b;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+}
+
+#s-43 .inner {
+    width: 7.1rem;
+    height: 0.66rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+}
+
+#s-43 .inner .name {
+    width: 0.54rem;
+    height: 100%;
+    margin-left: 0.2rem;
+    float: left;
+    font-size: 0.24rem;
+    line-height: 0.66rem;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-43 .inner .icon {
+    width: 0.74rem;
+    height: 100%;
+    float: left;
+    background: url(/book/home2/images/reader/1.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+#s-43 .inner .tiao {
+    width: 4.74rem;
+    height: 0.06rem;
+    margin-top: 0.3rem;
+    float: left;
+    border-radius: 0.03rem;
+    background: #d5d5d5;
+}
+
+#s-43 .inner .tiao .jd {
+    width: 0rem;
+    height: 100%;
+    background: #3ed929;
+    border-radius: 0.03rem;
+}
+
+#s-43 .inner .tiao .btn {
+    width: 0.18rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0rem;
+    top: -0.06rem;
+    /*background: url(/book/home2/images/reader/btn.png) no-repeat center center;*/
+    /*background-size: 0.08rem 0.08rem;*/
+    transform:scale(5.5,5.5);
+}
+
+#s-43 .inner .tiao .btn img{
+    width:0.06rem;
+    height:0.06rem;
+    position: absolute;
+    top: 0.06rem;
+    left:0.05rem;
+}
+
+#s-43 .zi {
+    top: 0.35rem;
+}
+
+#s-43 .hang {
+    top: 0.66rem;
+}
+
+#s-43 .hang .icon {
+    background: url(/book/home2/images/reader/cz.png) no-repeat 0 0.03rem;
+    background-size: cover;
+}
+
+#s-43 .bj {
+    width: 7.1rem;
+    height: 1.1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    top: 1.32rem;
+}
+
+#s-43 .bj .name {
+    width: 0.74rem;
+    height: 100%;
+    padding-left: 0.2rem;
+    float: left;
+    font-size: 0.24rem;
+    line-height: 0.66rem;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-43 .bj .color {
+    width: 6.36rem;
+    /*height: 1.1rem;*/
+    height:auto;
+    float: left;
+    padding-left: 0.2rem;
+}
+
+#s-43 .bj .color li {
+    width: 12.5%;
+    height: 100%;
+    padding: 0.16rem 0.06rem;
+    display: block;
+    float: left;
+    margin-right:0.2rem;
+}
+
+#s-43 .bj .color li .top {
+    width: 0.64rem;
+    height: 0.64rem;
+    background: #fff;
+    line-height: 0.64rem;
+    color: #313131;
+    text-align: center;
+    font-size: 0.26rem;
+}
+
+#s-43 .bj .color li span {
+    display: block;
+    position: absolute;
+    top: 0.8rem;
+    line-height: 0.26rem;
+    left: 0.06rem;
+    color: #fff;
+    font-size: 0.12rem;
+    width: 0.64rem;
+    text-align: center;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-43 .bj .color li:nth-of-type(1) .top {
+    background: #000000;
+}
+
+#s-43 .bj .color li:nth-of-type(2) .top {
+    background: #FFA757;
+}
+
+#s-43 .bj .color li .active{
+    border:0.04rem solid #41e441;
+    border-radius: 0.04rem;
+}
+
+#s-43 .bj .color li:nth-of-type(3) .top {
+    background: #FFFFFF;
+}
+
+#s-43 .bj .color li:nth-of-type(4) .top {
+    background: #EAE2CB;
+}
+
+#s-43 .bj .color li:nth-of-type(5) .top {
+    background: #EC9343;
+}
+
+#s-43 .bj .color li:nth-of-type(6) .top {
+    background: #000000;
+}
+
+#s-43 .bj .color li:nth-of-type(7) .top {
+    background: transparent url("/book/home2/images/reader/02.jpg") center center repeat;
+}
+
+#s-43 .bj .color li:nth-of-type(8) .top {
+    background: transparent url("/book/home2/images/reader/03.png") center center repeat;
+}
+
+#s-43 .bj .color li:nth-of-type(9) .top {
+    background: transparent url("/book/home2/images/reader/05.jpg") center center repeat;
+}
+
+#s-43 .bj .color li:nth-of-type(10) .top {
+    background: transparent url("/book/home2/images/reader/06.png") center center repeat;
+}
+
+#s-43 .bj .color li:nth-of-type(11) .top {
+    background: transparent url("/book/home2/images/reader/07.png") center center repeat;
+}
+
+#s-43 .bj .color li:nth-of-type(12) .top {
+    background: transparent url("/book/home2/images/reader/08.png") center center repeat;
+}
+
+#s-44 {
+    width: 100%;
+    height: 1.88rem;
+    background: #151c2b;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 0.16rem;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+    z-index: 99;
+    display: none;
+}
+
+#s-44 .inner {
+    width: 7.1rem;
+    height: 0.66rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+}
+
+#s-44 .inner .name {
+    width: 0.74rem;
+    height: 100%;
+    padding-left: 0.2rem;
+    float: left;
+    font-size: 0.24rem;
+    line-height: 0.66rem;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-44 .inner .icon {
+    width: 0.74rem;
+    height: 100%;
+    padding-top: 0.2rem;
+    float: left;
+}
+
+#s-44 .inner .icon .xitong {
+    width: 100%;
+    height: 0.3rem;
+    border: 0.02rem solid #fff;
+    border-radius: 0.03rem;
+    line-height: 0.26rem;
+    font-size: 0.14rem;
+    text-align: center;
+}
+
+#s-44 .inner .tiao {
+    width: 4.74rem;
+    height: 0.06rem;
+    margin-top: 0.3rem;
+    float: left;
+    border-radius: 0.03rem;
+    background: #d5d5d5;
+}
+
+#s-44 .inner .tiao .jd {
+    width: 0.5rem;
+    height: 100%;
+    background: #3ed929;
+    border-radius: 0.03rem;
+}
+
+#s-44 .inner .tiao .btn {
+    width: 0.18rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.5rem;
+    top: -0.06rem;
+    background: url(/book/home2/images/reader/btn.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+#s-44 .hang {
+    top: 0.9rem;
+}
+
+#s-44 .hang .name.rt {
+    padding-left: 2rem;
+}
+
+#s-44 .hang .name {
+    width: 50%;
+}
+
+#s-44 .hang .name .icon.sel .anniu {
+    background: #ffd235;
+}
+
+#s-44 .hang .name .icon {
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: #fff;
+    top: 0.24rem;
+    z-index: 10;
+}
+
+#s-44 .hang .name .icon .anniu {
+    background: #7d7d7d;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+
+#s-44 .hang .name .mos {
+    padding-left: 0.38rem;
+}
+
+#s-45:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -0.05rem;
+    border-top: 0.1rem solid #272727;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+}
+
+#s-45 {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    width: 3.98rem;
+    height: 0.46rem;
+    background: #272727;
+    border-radius: 0.08rem;
+    z-index: 99;
+}
+
+#s-45 .item {
+    width: 20%;
+    height: 100%;
+    border-left: 0.02rem solid #202020;
+    margin-left: -0.02rem;
+    float: left;
+    text-align: center;
+    line-height: 0.46rem;
+    font-size: 0.18rem;
+    color: #fff;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-45 .item:nth-of-type(1) {
+    margin-left: 0.01rem;
+    border-bottom-left-radius: 0.08rem;
+    border-top-left-radius: 0.08rem;
+}
+
+#s-47:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -0.05rem;
+    border-top: 0.1rem solid #272727;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+}
+
+#s-47 {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    width: 3.98rem;
+    height: 0.46rem;
+    background: #272727;
+    border-radius: 0.08rem;
+    z-index: 99;
+}
+
+#s-47 .item {
+    width: 20%;
+    height: 100%;
+    border-left: 0.02rem solid #202020;
+    margin-left: -0.02rem;
+    float: left;
+    text-align: center;
+    line-height: 0.46rem;
+    font-size: 0.18rem;
+    color: #fff;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-47 .item:nth-of-type(1) {
+    margin-left: 0.01rem;
+    border-bottom-left-radius: 0.08rem;
+    border-top-left-radius: 0.08rem;
+}
+
+/* @font-face {
+    font-family: "iconfont";
+    src: url("iconfont.eot?t=1479437360923");
+    IE9
+    src: url("iconfont.eot?t=1479437360923#iefix") format("embedded-opentype"), url("iconfont.woff?t=1479437360923") format("woff"), url("iconfont.ttf?t=1479437360923") format("truetype"), url("iconfont.svg?t=1479437360923#iconfont") format("svg");
+    iOS 4.1-
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 0.16rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+ */
+#s-46 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "苹方", "microsoft yahei", "helvetica", "arial", "sans-serif";
+}
+
+#s-46 .header {
+    width: 100%;
+    height: 0.9rem;
+    background: #29a6dc;
+}
+
+#s-46 .header .circle {
+    width: 0.46rem;
+    height: 0.46rem;
+    background: #fff;
+    border: 0.04rem solid #0d76c3;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.02rem;
+    left: 0.24rem;
+}
+
+#s-46 .header .circle .icon {
+    line-height: 0.36rem;
+    text-align: center;
+    font-size: 0.16rem;
+}
+
+#s-46 .header .title {
+    position: absolute;
+    left: 50%;
+    margin-left: -0.7rem;
+    font-size: 0.36rem;
+    color: #fff;
+}
+
+#s-46 .header .title div {
+    width: 0.86rem;
+    height: 0.23rem;
+    background: url(/book/home2/images/reader/mynote.png) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.43rem;
+    top: 100%;
+}
+
+#s-46 .content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#s-46 .uzi {
+    top: 0.23rem !important;
+}
+
+#s-46 .content {
+    width: 7.04rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 1rem;
+}
+
+#s-46 .content .lists {
+    float: left;
+    overflow: visible;
+    width: 100%;
+}
+
+#s-46 .content .lists .listtop {
+    width: 100%;
+    height: 0.54rem;
+    padding-left: 0.58rem;
+    background: url(/book/home2/images/reader/mynote1.png) no-repeat 0.2rem 0.1rem;
+    background-size: 0.27rem 0.27rem;
+}
+
+#s-46 .content .lists .listtop span {
+    margin-right: 0.14rem;
+    display: block;
+    float: left;
+    font-size: 0.22rem;
+    line-height: 0.54rem;
+}
+
+#s-46 .content .lists .listbottom {
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 0.1rem;
+    box-shadow: #ebebeb 0 0 0.2rem;
+    font-size: 0.24rem;
+    padding: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+#s-46 .content .lists .listbottom .bg {
+    width: 6.3rem;
+    height: 0.04rem;
+    position: absolute;
+    top: -0.06rem;
+    left: 0.14rem;
+    background: url(/book/home2/images/reader/line.png) no-repeat 0 0;
+    background-size: 6.18rem 0.03rem;
+}
+
+#s-46 .content .lists .input {
+    margin-top: 0.24rem;
+    height: 0.96rem;
+}
+
+#s-46 .content .lists .input textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+#s-46 .content .lists .btn {
+    width: 100%;
+    height: 0.65rem;
+    margin-top: 0.46rem;
+}
+
+#s-46 .content .lists .btn div {
+    width: 1.69rem;
+    height: 0.61rem;
+    position: absolute;
+    top: 0;
+}
+
+#s-46 .content .lists .btn .left {
+    left: 0.96rem;
+    background: url(/book/home2/images/reader/bj.png) no-repeat 0 0;
+    background-size: 1.69rem 0.61rem;
+}
+
+#s-46 .content .lists .btn .right {
+    right: 0.96rem;
+    background: url(/book/home2/images/reader/qd.png) no-repeat 0 0;
+    background-size: 1.69rem 0.61rem;
+}

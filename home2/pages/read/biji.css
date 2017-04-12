@@ -1,0 +1,1167 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+/*建盒子*/
+/*正方形*/
+/*圆*/
+body {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.w-38 {
+    width: 100%;
+    height: 100%;
+    background: #FFE9B0 !important;
+}
+
+.g-main {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 1rem;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+span {
+    font-size: 0.28rem;
+    font-family: '苹方';
+    color: #333333;
+}
+
+/*头部1*/
+.g-header {
+    display: none;
+    width: 100%;
+    height: 1rem;
+}
+
+.g-header .g-header-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.g-header .g-header-1 .g-header-a {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("/book/home2/images/reader/fan.png") no-repeat center;
+    background-size: cover;
+}
+
+.g-header .g-header-1 .g-header-a:first-child {
+    left: 0.2rem;
+}
+
+.g-header .g-header-1 .g-header-a:nth-of-type(2) {
+    background: url("/book/home2/images/reader/e34.png") no-repeat center;
+    background-size: cover;
+    right: 1rem;
+}
+
+.g-header .g-header-1 .g-header-a:last-child {
+    background: url("/book/home2/images/reader/e2.png") no-repeat center;
+    background-size: cover;
+    right: 0.2rem;
+}
+
+/*正文*/
+.zhengwen {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.zhengwen .wenzhang {
+    width: 100%;
+    height: 100%;
+    background: #ffe9b0;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+    overflow: auto;
+}
+
+.zhengwen .wenzhang .title {
+    width: 100%;
+    height: auto;
+    line-height: 5;
+}
+
+.zhengwen .wenzhang .title p {
+    font-weight: 600;
+    font-size: 0.3rem;
+    font-family: '苹方';
+}
+
+.zhengwen .wenzhang .wenzhang-inner {
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+}
+
+.zhengwen .wenzhang .wenzhang-inner p {
+    font-size: 0.24rem;
+}
+
+.wenzhang.quanping {
+    position: fixed;
+    top: 0.4rem;
+    bottom: 0;
+    margin: auto;
+}
+
+.wenzhang.quanping .shuming {
+    width: 100%;
+    height: 0.42rem;
+}
+
+.wenzhang.quanping .shuming .shuming-name {
+    margin-left: 0.23rem;
+    padding: 0 0.05rem;
+    background: #ffe7a7;
+    float: left;
+    font-size: 0.18rem;
+    color: #7b6c55;
+    font-family: '苹方';
+    line-height: 0.42rem;
+}
+
+.wenzhang.quanping .shuming .changxian {
+    width: 100%;
+    height: 0.02rem;
+    background: #a1946e;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.wenzhang.quanping .jindu {
+    width: auto;
+    height: 0.75rem;
+    position: fixed;
+    bottom: 0;
+    left: 0.5rem;
+    right: 0.5rem;
+}
+
+.wenzhang.quanping .jindu .jindu-left, .wenzhang.quanping .jindu .jindu-right {
+    height: 0.75rem;
+    line-height: 0.75rem;
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: 600;
+    color: #f0f0f0;
+    color: #363028;
+    float: left;
+}
+
+.wenzhang.quanping .jindu .jindu-right {
+    float: right;
+}
+
+/*搜索 标注框*/
+.sou-box {
+    width: 4.1rem;
+    height: 0.46rem;
+    background: #272727;
+    border-radius: 0.05rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.sou-box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.1rem;
+    left: 50%;
+    width: 0.18rem;
+    height: 0.12rem;
+    background: url(/book/home2/images/setting/san.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.sou-box .sou-lis {
+    width: 0.82rem;
+    font-size: 0.18rem;
+    color: #f3f3f3;
+    line-height: 0.46rem;
+    text-align: center;
+    float: left;
+}
+
+.sou-box .sou-lis:not(:last-child) {
+    border-right: 0.02rem solid #202020;
+}
+
+.sou-box:nth-of-type(2) {
+    top: 6rem;
+}
+
+/*亮度调节*/
+.g-liang {
+    display: none;
+    width: 100%;
+    height: 1.86rem;
+    background: #151c2b;
+    box-shadow: 0 0 0.2rem #b2b2b2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.18rem 0.24rem;
+}
+
+.g-liang .g-liang-a {
+    width: 100%;
+    height: auto;
+    padding: 0.22rem 0;
+}
+
+.g-liang .g-liang-a:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.g-liang .g-liang-a > div {
+    height: 0.30rem;
+    float: left;
+}
+
+.g-liang .g-liang-a .progress-box {
+    width: 4.67rem;
+}
+
+.g-liang .g-liang-a .g-liang-zi {
+    width: 0.64rem;
+    height: 0.3rem;
+    line-height: 0.30rem;
+    text-align: center;
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
+.g-liang .g-liang-a .g-liang-xi {
+    width: 0.72rem;
+    height: 0.31rem;
+    border: 0.02rem solid #f0f0f0;
+    border-radius: 0.05rem;
+    font-size: 0.16rem;
+    color: #f0f0f0;
+    text-align: center;
+    line-height: 0.31rem;
+}
+
+.g-liang .g-liang-a .g-liang-a-in {
+    padding: 0 0.18rem;
+    float: left;
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: 500;
+    color: #f0f0f0;
+    color: #999;
+}
+
+.g-liang .g-liang-a .g-liang-a-in .icon {
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.22rem;
+    border-radius: 50%;
+    background: #fff;
+    padding-right: 0.18rem;
+}
+
+.g-liang .g-liang-a .g-liang-a-in .icon:before {
+    content: '';
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin: auto;
+    background: #7d7d7d;
+}
+
+.g-liang .g-liang-a .g-liang-a-in:last-child {
+    float: right;
+}
+
+.g-liang .g-liang-a .g-liang-a-in.active {
+    color: #fff;
+}
+
+.g-liang .g-liang-a .g-liang-a-in.active .icon:before {
+    background: #ffd235;
+}
+
+/*设置字体*/
+.set-font {
+    display: none;
+    width: 100%;
+    height: 2.8rem;
+    background: #151c2b;
+    box-shadow: 0 0 0.2rem #b2b2b2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 0.22rem;
+}
+
+.set-font .set-font-a {
+    width: 100%;
+    height: auto;
+}
+
+.set-font .set-font-a:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.set-font .set-font-a > div {
+    height: 0.64rem;
+    float: left;
+}
+
+.set-font .set-font-a .set-font-a-zi {
+    padding-left: 0.2rem;
+    padding-right: 0.15rem;
+    line-height: 0.64rem;
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+.set-font .set-font-a .progress-box {
+    width: 4.67rem;
+}
+
+.set-font .set-font-a .set-font-a-icon {
+    width: 0.32rem;
+    margin: 0 0.15rem;
+    line-height: 0.64rem;
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+.set-font .set-font-a .set-font-a-icon:nth-of-type(2) {
+    background-image: url("/book/home2/images/reader/e28.png");
+    background-repeat: no-repeat;
+    background-size: 0.28rem;
+    background-position: center;
+}
+
+.set-font .set-font-a .set-font-a-kuai {
+    height: auto;
+    margin-top: 0.2rem;
+    padding-left: 0.15rem;
+}
+
+.set-font .set-font-a:nth-of-type(2) .set-font-a-icon:nth-of-type(2) {
+    background-image: url("/book/home2/images/reader/e29.png");
+}
+
+.set-bg.active:before {
+    content: '';
+    display: block;
+    width: 0.62rem;
+    height: 0.62rem;
+    border: 0.04rem solid #41e441;
+    border-radius: 0.05rem;
+    margin-top: -0.03rem;
+    margin-left: -0.04rem;
+    box-sizing: border-box;
+}
+
+.set-bg {
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-right: 0.18rem;
+    float: left;
+    background: #fff;
+}
+
+.set-bg p {
+    width: 0.7rem;
+    position: absolute;
+    left: 50%;
+    bottom: -0.3rem;
+    margin-left: -0.35rem;
+    text-align: center;
+    font-size: 0.14rem;
+    color: #fff;
+}
+
+.set-bg.yangpi {
+    background: #fcf3db;
+}
+
+.set-bg.jingdian1 {
+    background: #ffe9b0;
+}
+
+.set-bg.jingdian2 {
+    background: #d8a764;
+}
+
+.set-bg.lan {
+    background: #3876ac;
+}
+
+.set-bg.mei {
+    background: #21858e;
+}
+
+.set-bg.shao {
+    background: #f4c5d4;
+}
+
+.set-bg.yangyan {
+    background: #79d143;
+}
+
+/*更多功能*/
+.gengduo {
+    display: none;
+    width: 100%;
+    height: 2.2rem;
+    background: #151c2b;
+    box-shadow: 0 0 0.2rem #b2b2b2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.gengduo .gengduo-top {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.4rem;
+    padding: 0 0.2rem;
+}
+
+.gengduo .gengduo-top .prev, .gengduo .gengduo-top .next {
+    width: 1.16rem;
+    height: 0.4rem;
+    float: left;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+    color: #989898;
+    text-align: center;
+}
+
+.gengduo .gengduo-top .next {
+    float: right;
+}
+
+.gengduo .gengduo-bottom {
+    width: 100%;
+    padding: 0 0.85rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0.2rem;
+}
+
+.gengduo .gengduo-bottom > div {
+    width: 0.6rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.gengduo .gengduo-bottom > div div {
+    width: 0.57rem;
+    height: 0.57rem;
+    border-radius: 50%;
+    background: #29a6dc;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.gengduo .gengduo-bottom > div .mulu {
+    background-image: url("/book/home2/images/reader/e22.png");
+}
+
+.gengduo .gengduo-bottom > div .shezhi {
+    background-image: url("/book/home2/images/reader/e24.png");
+}
+
+.gengduo .gengduo-bottom > div .liangdu {
+    background-image: url("/book/home2/images/reader/e23.png");
+}
+
+.gengduo .gengduo-bottom > div p {
+    margin: 0.1rem auto 0;
+    font-size: 0.28rem;
+    color: #e6e6e6;
+    font-family: '苹方';
+    font-weight: 600;
+}
+
+.gengduo .gengduo-bottom .mulu-box {
+    float: left;
+}
+
+.gengduo .gengduo-bottom .shezhi-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.gengduo .gengduo-bottom .liangdu-box {
+    float: right;
+}
+
+.progress {
+    width: 4.67rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 0.2rem;
+    background: #d5d5d5;
+}
+
+.progress .progress-i {
+    width: 2rem;
+    height: 100%;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    background: #1db24b url("/book/home2/images/reader/e21.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 4.67rem 120%;
+    background-position: left center;
+}
+
+.progress .progress-i:before {
+    content: '';
+    display: block;
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 50%;
+    background: url("/book/home2/images/reader/e20.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -0.06rem;
+    right: -0.12rem;
+}
+
+/*目录*/
+.g-cata {
+    width: 100%;
+    height: 100%;
+}
+
+.g-cata li {
+    width: 100%;
+    height: 0.9rem;
+    border-bottom: 1px dashed #999;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.g-cata li span {
+    padding-right: 0.2rem;
+}
+
+.g-cata li .g-cata-list-left {
+    height: 100%;
+    padding-left: 0.25rem;
+    float: left;
+    line-height: 0.9rem;
+}
+
+.g-cata li .g-cata-list-right {
+    height: 100%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    float: right;
+    line-height: 0.9rem;
+}
+
+.g-cata li .g-cata-list-right .yixiazai {
+    color: #333333;
+}
+
+.g-cata li .g-cata-list-right .weixiazai {
+    color: #989898;
+}
+
+li.g-cata-list.active span {
+    color: #357fe4;
+}
+
+/*笔记列表*/
+.g-node {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.g-node .g-count {
+    width: 100%;
+    height: 0.48rem;
+    background: #e5e5e5;
+    font-size: 0.20rem;
+    line-height: 0.48rem;
+    text-align: center;
+    color: #a8a8a8;
+}
+
+.g-node .g-node-inner {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0.48rem;
+    bottom: 0;
+}
+
+.g-node .g-node-inner li.g-node-list:not(:first-child) {
+    border-bottom: 0.01rem dashed #151c2b;
+}
+
+.g-node .g-node-inner li.g-node-list {
+    width: 100%;
+    height: 1.8rem;
+    padding-left: 0.24rem;
+    overflow: hidden;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-left {
+    width: 0.8rem;
+    height: 100%;
+    float: left;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-left .g-node-list-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(/book/home2/images/setting/e8.png) no-repeat;
+    background-size: cover;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right {
+    padding-left: 0.24rem;
+    padding-top: 0.1rem;
+    float: left;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right .g-node-list-title {
+    width: 4.5rem;
+    height: 0.3rem;
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: 600;
+    color: #f0f0f0;
+    line-height: 0.3rem;
+    color: #151c2b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right .g-node-list-inner {
+    width: 4.5rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    font-size: 0.16rem;
+    color: #666;
+    font-family: '苹方';
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right .g-node-list-miaoshu {
+    height: 0.9rem;
+    padding-left: 0.32rem;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right .g-node-list-miaoshu .bi-icon {
+    width: 0.25rem;
+    height: 0.25rem;
+    background: url(/book/home2/images/setting/e9.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    top: -0.6rem;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right .g-node-list-miaoshu p {
+    width: 3.7rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.2rem;
+    color: #ec2e56;
+    font-family: '苹方';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.g-node .g-node-inner li.g-node-list .g-node-list-right .g-node-list-miaoshu p:nth-last-child {
+    text-overflow: clip;
+}
+
+.g-node-list-xinxi {
+    width: 5.4rem;
+    height: 0.3rem;
+}
+
+.g-node-list-xinxi .g-node-list-xinxi-left {
+    height: 0.2rem;
+    float: left;
+}
+
+.g-node-list-xinxi .g-node-list-xinxi-left .biao, .g-node-list-xinxi .g-node-list-xinxi-left .yan {
+    height: 0.2rem;
+    padding-left: 0.30rem;
+    padding-right: 0.15rem;
+    float: left;
+    line-height: 0.2rem;
+    font-size: 0.16rem;
+    color: #333333;
+}
+
+.g-node-list-xinxi .g-node-list-xinxi-left .biao i.icon, .g-node-list-xinxi .g-node-list-xinxi-left .yan i.icon {
+    display: block;
+    font-style: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    left: 0;
+}
+
+.g-node-list-xinxi .g-node-list-xinxi-left .biao i.icon {
+    background-image: url(/book/home2/images/setting/e17.png);
+}
+
+.g-node-list-xinxi .g-node-list-xinxi-left .yan {
+    padding-left: 0.40rem;
+}
+
+.g-node-list-xinxi .g-node-list-xinxi-left .yan i.icon {
+    width: 0.3rem;
+    background-image: url(/book/home2/images/setting/e18.png);
+}
+
+.g-node li.g-node-list.bianji .g-node-list-right .g-node-list-miaoshu {
+    padding-left: 0.55rem;
+    padding-top: 0.15rem;
+    background: url(/book/home2/images/setting/e30.png);
+    background-size: cover;
+}
+
+.g-node li.g-node-list.bianji .g-node-list-right .g-node-list-miaoshu .bi-icon {
+    top: -0.3rem;
+    left: 0.24rem;
+}
+
+.g-node .g-node-inner li.g-node-list.active {
+    border-bottom: 0.01rem solid #29dcbc;
+}
+
+.g-node .g-node-inner li.g-node-list.active .g-node-list-bj {
+    width: 100%;
+    height: 1.81rem;
+    top: 0.01rem;
+    background: url(/book/home2/images/setting/e31.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.g-node .g-node-inner li.g-node-list.active .g-node-list-bj .cha {
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(/book/home2/images/setting/e32.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.5rem;
+}
+
+.g-node .g-node-inner li.g-node-list.active .g-node-list-left {
+    display: none;
+}
+
+.g-node .g-node-inner li.g-node-list.active .g-node-list-right .g-node-list-title,
+.g-node .g-node-inner li.g-node-list.active .g-node-list-right .g-node-list-inner,
+.g-node .g-node-inner li.g-node-list.active .g-node-list-right .g-node-list-xinxi .g-node-list-xinxi-left div {
+    color: #fff;
+}
+
+.g-node .g-node-inner li.g-node-list.active .g-node-list-right .g-node-list-miaoshu p {
+    color: #1d9563;
+}
+
+.g-chakan-quanbu {
+    width: 100%;
+    height: 1.28rem;
+    background: #151c2b;
+    position: fixed;
+    bottom: 0;
+}
+
+.g-chakan-quanbu .g-chakan-quanbu-in {
+    width: 1.4rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.20rem;
+    line-height: 0.5rem;
+    color: #989898;
+    text-align: center;
+}
+
+.g-chakan-quanbu .g-chakan-quanbu-in:after, .g-chakan-quanbu .g-chakan-quanbu-in:before {
+    content: '';
+    display: block;
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #989898;
+}
+
+.g-chakan-quanbu .g-chakan-quanbu-in:after {
+    left: 0.09rem;
+}
+
+.g-chakan-quanbu .g-chakan-quanbu-in:before {
+    right: 0.09rem;
+}
+
+/* @font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1479450372436");
+  IE9
+  src: url("iconfont.eot?t=1479450372436#iefix") format("embedded-opentype"), url("iconfont.woff?t=1479450372436") format("woff"), url("iconfont.ttf?t=1479450372436") format("truetype"), url("iconfont.svg?t=1479450372436#iconfont") format("svg");
+  iOS 4.1- }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+ */
+.icon-shezhi:before {
+    content: "\e604";
+}
+
+.icon-icon:before {
+    content: "\e603";
+}
+
+.icon-60:before {
+    content: "\e647";
+}
+
+.icon-duihao:before {
+    content: "\e601";
+}
+
+.icon-bofangqibofang:before {
+    content: "\e610";
+}
+
+.icon-bofangqizanting:before {
+    content: "\e617";
+}
+
+.icon-bofangqibofang1:before {
+    content: "\e602";
+}
+
+.icon-yinliang:before {
+    content: "\e629";
+}
+
+.icon-p-menus:before {
+    content: "\e670";
+}
+
+.icon-xiaoyuhao:before {
+    content: "\e6e4";
+}
+
+.icon-iconfontdaohanggonggao:before {
+    content: "\e62e";
+}
+
+.icon-xiazai:before {
+    content: "\e62f";
+}
+
+.icon-hanbaobao:before {
+    content: "\e648";
+}
+
+.icon-zhongguoliantong:before {
+    content: "\e600";
+}
+
+.icon-cha:before {
+    content: "\e67d";
+}
+
+.icon-shangyiqu101:before {
+    content: "\e6e1";
+}
+
+.icon-suijibofang01:before {
+    content: "\e6e2";
+}
+
+.icon-xiayiqu101:before {
+    content: "\e718";
+}
+
+.icon-biaoqian:before {
+    content: "\e6f8";
+}
+
+.icon-mulu:before {
+    content: "\e712";
+}
+
+.icon-yueliang:before {
+    content: "\e642";
+}
+
+.icon-canoe_slalom:before {
+    content: "\e77c";
+}
+
+.biaoqian {
+    position: absolute;
+    top: 0.35rem;
+    right: 1rem;
+    color: white;
+    font-size: 0.28rem;
+}
+
+#main {
+    width: 100%;
+    height: 11.96rem;
+    background: #ffe9b0;
+}
+
+#end {
+    width: 100%;
+    height: 2.25rem;
+    background: #151c2b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+#end .syz, #end .xyz {
+    width: 1rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #c6c6c6;
+}
+
+#end .syz {
+    left: .3rem;
+}
+
+#end .xyz {
+    right: .3rem;
+}
+
+#end .jindutiao {
+    width: 4.74rem;
+    height: 0.06rem;
+    position: absolute;
+    left: 1.35rem;
+    top: 0.55rem;
+    border-radius: 0.03rem;
+    background: #d5d5d5;
+}
+
+#end .jindutiao .jd {
+    width: 0.5rem;
+    height: 100%;
+    background: #3ed929;
+    border-radius: 0.03rem;
+}
+
+#end .jindutiao .btn {
+    width: 0.18rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.5rem;
+    top: -0.06rem;
+    background: url(/book/home2/images/setting/btn.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+#end .circles1, #end .circles2, #end .circles3 {
+    width: 0.57rem;
+    height: 0.57rem;
+    background: #29a6dc;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.54rem;
+}
+
+#end .circles1 .icons, #end .circles2 .icons, #end .circles3 .icons {
+    line-height: 0.57rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #fff;
+}
+
+#end .circles1 {
+    left: 1.18rem;
+}
+
+#end .circles2 {
+    left: 3.45rem;
+}
+
+#end .circles3 {
+    right: 1.18rem;
+}
