@@ -10,6 +10,9 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
+        $this->display("screen");
+    }
+    public function app(){
         $this->display("app");
     }
     public function book3()

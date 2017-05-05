@@ -7,7 +7,7 @@ route.config(['$routeProvider', function ($routeProvider) {
         })
     }else {
        $routeProvider.when('/', {
-          templateUrl: "home2/pages/login/login.html",
+          templateUrl: "/book/home2/pages/login/login.html",
           controller: "LoginCtrl"
        })
     };
